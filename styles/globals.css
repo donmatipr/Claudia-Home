@@ -1,0 +1,351 @@
+/* ============================================================
+   CASA DE REPOSO CLAUDIA LASTRA — ESTILOS GLOBALES
+   Paleta, tipografía, reset y tokens de diseño
+   ============================================================ */
+
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Variables de diseño ── */
+:root {
+  /* Paleta */
+  --color-green-pastel:  #A9C5AD;
+  --color-green-sage:    #78977D;
+  --color-green-forest:  #254A36;
+  --color-ivory:         #FAF8F1;
+  --color-white:         #FFFFFF;
+  --color-beige:         #EDE5D6;
+  --color-terracotta:    #C9896B;
+  --color-text-main:     #25302A;
+  --color-text-secondary:#5D675F;
+  --color-whatsapp:      #25D366;
+  --color-whatsapp-dark: #128C7E;
+
+  /* Sombras */
+  --shadow-xs:  0 1px 3px rgba(37, 74, 54, 0.06);
+  --shadow-sm:  0 2px 8px rgba(37, 74, 54, 0.08);
+  --shadow-md:  0 6px 20px rgba(37, 74, 54, 0.10);
+  --shadow-lg:  0 16px 40px rgba(37, 74, 54, 0.14);
+
+  /* Radios */
+  --radius-sm:  8px;
+  --radius-md:  16px;
+  --radius-lg:  24px;
+  --radius-xl:  32px;
+  --radius-pill:999px;
+
+  /* Tipografía */
+  --font-serif:  'Lora', Georgia, serif;
+  --font-sans:   'Inter', system-ui, sans-serif;
+  --text-base:   18px;
+  --leading-relaxed: 1.75;
+  --leading-snug:    1.35;
+
+  /* Espaciado */
+  --section-pad:     96px;
+  --section-pad-sm:  56px;
+  --container-max:   1180px;
+  --container-pad:   24px;
+
+  /* Transiciones */
+  --transition-fast:   0.18s ease;
+  --transition-base:   0.28s ease;
+  --transition-slow:   0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Prefer reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ── Reset & base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--text-base);
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-main);
+  background-color: var(--color-ivory);
+  overflow-x: hidden;
+}
+
+/* ── Skip link ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  background: var(--color-green-forest);
+  color: var(--color-white);
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top var(--transition-base);
+}
+.skip-link:focus {
+  top: 16px;
+}
+
+/* ── Tipografía ── */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  line-height: var(--leading-snug);
+  color: var(--color-text-main);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 700; }
+h2 { font-size: clamp(1.6rem, 4vw, 2.5rem); font-weight: 600; }
+h3 { font-size: clamp(1.15rem, 2.5vw, 1.4rem); font-weight: 600; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+
+p  { line-height: var(--leading-relaxed); }
+
+a {
+  color: var(--color-green-forest);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+a:hover { color: var(--color-green-sage); }
+a:focus-visible {
+  outline: 3px solid var(--color-terracotta);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol { list-style: none; }
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ── Contenedor ── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+/* ── Secciones ── */
+.section {
+  padding: var(--section-pad) 0;
+}
+.section--ivory  { background-color: var(--color-ivory); }
+.section--white  { background-color: var(--color-white); }
+.section--beige  { background-color: var(--color-beige); }
+.section--forest { background-color: var(--color-green-forest); }
+.section--pastel { background-color: #E8F0E9; }
+
+/* ── Encabezados de sección ── */
+.section-label {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-green-sage);
+  margin-bottom: 12px;
+}
+.section-title {
+  margin-bottom: 16px;
+  color: var(--color-text-main);
+}
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  line-height: 1.7;
+}
+.section-header {
+  margin-bottom: 56px;
+}
+.section-header--center {
+  text-align: center;
+}
+.section-header--center .section-subtitle {
+  margin: 0 auto;
+}
+
+/* ── Botones ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background var(--transition-base), color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.btn:focus-visible {
+  outline: 3px solid var(--color-terracotta);
+  outline-offset: 3px;
+}
+
+.btn-primary {
+  background-color: var(--color-green-forest);
+  color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+.btn-primary:hover {
+  background-color: #1a3828;
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-green-forest);
+  border-color: var(--color-green-forest);
+}
+.btn-secondary:hover {
+  background-color: var(--color-green-forest);
+  color: var(--color-white);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+  background-color: var(--color-whatsapp);
+  color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+.btn-whatsapp:hover {
+  background-color: var(--color-whatsapp-dark);
+  color: var(--color-white);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: rgba(255,255,255,0.6);
+}
+.btn-outline-white:hover {
+  background-color: rgba(255,255,255,0.12);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.btn-sm {
+  min-height: 44px;
+  padding: 10px 22px;
+  font-size: 0.9rem;
+}
+.btn-lg {
+  min-height: 58px;
+  padding: 16px 40px;
+  font-size: 1.05rem;
+}
+
+/* ── Tarjetas ── */
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+/* ── Placeholder de imagen ── */
+.img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-beige) 0%, #d9cfc2 100%);
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 16px;
+  min-height: 220px;
+  border-radius: inherit;
+}
+
+/* ── Animación fade-in ── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Badge / etiqueta ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(169, 197, 173, 0.25);
+  color: var(--color-green-forest);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ── Divider ── */
+.divider {
+  width: 48px;
+  height: 3px;
+  background: var(--color-terracotta);
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+.divider--center { margin-left: auto; margin-right: auto; }
+
+/* ── Focus visible global ── */
+:focus-visible {
+  outline: 3px solid var(--color-terracotta);
+  outline-offset: 3px;
+}
+
+/* ── Scroll padding para nav fijo ── */
+[id] { scroll-margin-top: 80px; }

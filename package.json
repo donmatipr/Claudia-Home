@@ -1,0 +1,28 @@
+{
+  "name": "casa-de-reposo-claudia-lastra",
+  "version": "1.0.0",
+  "description": "Sitio web de Casa de Reposo Claudia Lastra — Residencia para personas mayores en Macul y Ñuñoa, Santiago.",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve . --listen 3000 --no-clipboard",
+    "build": "npx esbuild main.js --bundle --outfile=bundle.js --format=iife --global-name=CasaDeReposo --minify --sourcemap=external",
+    "build:dev": "npx esbuild main.js --bundle --outfile=bundle.js --format=iife --global-name=CasaDeReposo --sourcemap=inline",
+    "preview": "npx serve . --listen 4000 --no-clipboard"
+  },
+  "keywords": [
+    "casa-de-reposo",
+    "residencia-adulto-mayor",
+    "Santiago",
+    "Macul",
+    "Nuñoa"
+  ],
+  "author": "Casa de Reposo Claudia Lastra",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "serve": "^14.2.4"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}

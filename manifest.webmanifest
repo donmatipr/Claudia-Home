@@ -1,0 +1,16 @@
+{
+  "name": "Casa de Reposo Claudia Lastra",
+  "short_name": "Casa de Reposo CL",
+  "description": "Residencia para personas mayores en Macul y Ñuñoa, Santiago.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F1",
+  "theme_color": "#254A36",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}

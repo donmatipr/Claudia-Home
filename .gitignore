@@ -1,0 +1,13 @@
+# Archivos ignorados por Git
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.env.production
+.vercel
+
+# Sourcemaps generados por el build (no subir al repo)
+bundle.js.map
