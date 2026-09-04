@@ -111,7 +111,7 @@ var CasaDeReposo=(()=>{var i={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </div>
       <h1 id="hero-title" class="hero__title">
         Cuidado las 24 horas<br>
-        para que tu ser querido<br>
+        para que tu ser querido,<br>
         <em>se sienta como en casa</em>
       </h1>
       <p class="hero__subtitle">
