@@ -12,20 +12,14 @@ export const SITE = {
     'Acompañamos a cada residente con cuidado permanente, alimentación diaria, actividades terapéuticas y un ambiente familiar en nuestras sedes de Macul y Ñuñoa.',
 
   // ─── Logo ────────────────────────────────────────────────
-  // Mientras `archivo` esté vacío, la página muestra el nombre escrito.
-  // Al poner la ruta de tu logo, aparece la imagen en su lugar.
-  // Si la ruta está mal escrita, vuelve sola al texto: nunca queda un
-  // hueco roto en el sitio publicado.
+  // Los archivos viven en images/logo-v2/ y se incrustan al compilar:
+  //   logo-horizontal.svg  → header (a color)
+  //   logo-monocromo.svg   → footer (hereda el color del CSS)
+  // Para cambiar el logo, reemplaza esos archivos y corre `npm run build`.
   logo: {
-    archivo: '',        // ej: 'images/logo.svg'
-    archivoClaro: '',   // versión para fondo oscuro (footer). Opcional.
     alt: 'Casa de Reposo Claudia Lastra',
-    alto: 44,           // alto en px dentro del header
-    altoFooter: 40,
-    // ¿El archivo ya trae el nombre escrito dentro?
-    // true  → se muestra solo la imagen
-    // false → se muestra la imagen y al lado el nombre en texto
-    incluyeNombre: true,
+    alto: 44,        // alto en px dentro del header
+    altoFooter: 40,  // alto en px dentro del footer
   },
 
   // ─── Contacto ────────────────────────────────────────────

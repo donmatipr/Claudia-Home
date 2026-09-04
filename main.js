@@ -6,6 +6,13 @@
 
 import { SITE } from './data/site.js';
 
+// El logo se incrusta en el DOM, no se carga con <img>. Un SVG dentro de
+// <img> se renderiza aislado y no alcanza las fuentes web de la página:
+// su texto saldría en Georgia y Arial en vez de Lora y Karla.
+// Para cambiar el logo, reemplaza estos archivos y corre `npm run build`.
+import LOGO_COLOR from './images/logo-v2/logo-horizontal.svg';
+import LOGO_MONO from './images/logo-v2/logo-monocromo.svg';
+
 // ─── Analítica ────────────────────────────────────────────────
 function trackEvent(name, params = {}) {
   try {
@@ -70,31 +77,20 @@ const ICO = {
 // data-con-logo es el que decide cuál de los dos se ve.
 function buildLogo({ oscuro = false } = {}) {
   const L = SITE.logo || {};
-  const archivo = oscuro ? (L.archivoClaro || L.archivo) : L.archivo;
+  // En el footer el fondo es verde oscuro: se usa la versión monocroma,
+  // que pinta con currentColor y hereda el color que le dé el CSS.
+  // Los archivos traen un bloque <metadata> de credenciales C2PA que no
+  // cumple ninguna función en la página. Se deja fuera del DOM.
+  const svg = (oscuro ? LOGO_MONO : LOGO_COLOR).replace(/<metadata>[\s\S]*?<\/metadata>/g, '');
   const alto = oscuro ? (L.altoFooter || 40) : (L.alto || 44);
 
-  const texto = `
-    <span class="logo__texto">
-      <span class="logo__nombre">Casa de Reposo</span>
-      <span class="logo__apellido">Claudia Lastra</span>
-    </span>`;
-
-  if (!archivo) return texto;
-
-  // Si el archivo no existe, se marca el contenedor y reaparece el texto.
-  // El orden importa: hay que marcar el contenedor antes de quitar la
-  // imagen, porque al removerla ya no puede encontrarlo con closest().
-  const respaldo =
-    "var c=this.closest('[data-con-logo]');if(c)c.dataset.conLogo='no';this.remove()";
-
   return `
-    <img
-      src="${archivo}"
-      alt="${L.alt || SITE.nombre}"
-      class="logo__img"
-      style="height:${alto}px"
-      onerror="${respaldo}"
-    >${texto}`;
+    <span
+      class="logo__svg"
+      style="--logo-alto:${alto}px"
+      role="img"
+      aria-label="${L.alt || SITE.nombre}"
+    >${svg}</span>`;
 }
 
 // ─── Imagen con fallback ──────────────────────────────────────
@@ -160,8 +156,6 @@ function buildHeader() {
         href="#inicio"
         class="header__logo"
         aria-label="Casa de Reposo Claudia Lastra — Inicio"
-        data-con-logo="${SITE.logo && SITE.logo.archivo ? 'si' : 'no'}"
-        data-logo-con-nombre="${SITE.logo && SITE.logo.incluyeNombre ? 'si' : 'no'}"
       >${buildLogo()}</a>
       <nav class="header__nav" id="main-nav" aria-label="Navegación principal">
         <ul class="nav__list" role="list">
@@ -881,11 +875,7 @@ function buildFooter() {
     <div class="footer__grid">
       <!-- Marca -->
       <div>
-        <div
-          class="footer__logo"
-          data-con-logo="${SITE.logo && (SITE.logo.archivoClaro || SITE.logo.archivo) ? 'si' : 'no'}"
-          data-logo-con-nombre="${SITE.logo && SITE.logo.incluyeNombre ? 'si' : 'no'}"
-        >${buildLogo({ oscuro: true })}</div>
+        <div class="footer__logo">${buildLogo({ oscuro: true })}</div>
         <p class="footer__tagline">Un hogar cercano, cuidado y acompañado todos los días. Sedes en Macul y Ñuñoa, Santiago.</p>
         <div class="footer__social">
           <a
