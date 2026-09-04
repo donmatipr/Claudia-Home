@@ -11,6 +11,23 @@ export const SITE = {
   descripcionBreve:
     'Acompañamos a cada residente con cuidado permanente, alimentación diaria, actividades terapéuticas y un ambiente familiar en nuestras sedes de Macul y Ñuñoa.',
 
+  // ─── Logo ────────────────────────────────────────────────
+  // Mientras `archivo` esté vacío, la página muestra el nombre escrito.
+  // Al poner la ruta de tu logo, aparece la imagen en su lugar.
+  // Si la ruta está mal escrita, vuelve sola al texto: nunca queda un
+  // hueco roto en el sitio publicado.
+  logo: {
+    archivo: '',        // ej: 'images/logo.svg'
+    archivoClaro: '',   // versión para fondo oscuro (footer). Opcional.
+    alt: 'Casa de Reposo Claudia Lastra',
+    alto: 44,           // alto en px dentro del header
+    altoFooter: 40,
+    // ¿El archivo ya trae el nombre escrito dentro?
+    // true  → se muestra solo la imagen
+    // false → se muestra la imagen y al lado el nombre en texto
+    incluyeNombre: true,
+  },
+
   // ─── Contacto ────────────────────────────────────────────
   telefono: '+56 9 9901 0921',
   telefonoHref: 'tel:+56999010921',
@@ -238,7 +255,7 @@ export const SITE = {
     titleTag: 'Casa de Reposo Claudia Lastra — Residencia para personas mayores en Macul y Ñuñoa',
     metaDescription:
       'Residencia para personas mayores en Macul y Ñuñoa, Santiago. Cuidadoras las 24 horas, 4 comidas diarias y 8 horas semanales de kinesiología y terapia ocupacional. Agenda una visita sin costo.',
-    canonicalUrl: 'https://casadereposo.cl', // Actualizar con dominio real
+    canonicalUrl: 'https://casa-de-reposo.victormatiaspoblete.workers.dev',
     ogImage: 'images/hero-residencia.webp',
   },
 
@@ -246,6 +263,6 @@ export const SITE = {
   // Reemplaza con tu ID de Google Analytics o Plausible si lo configuras.
   analytics: {
     gaId: '', // Ejemplo: 'G-XXXXXXXXXX'
-    plausibleDomain: '', // Ejemplo: 'casadereposo.cl'
+    plausibleDomain: '', // Ejemplo: 'casa-de-reposo.victormatiaspoblete.workers.dev'
   },
 };

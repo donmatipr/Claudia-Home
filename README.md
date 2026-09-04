@@ -236,6 +236,71 @@ testimonios: [
 
 ---
 
+## 🏷️ Cómo subir el logo
+
+El espacio ya está reservado en el header y en el footer. Mientras no haya
+archivo, se muestra el nombre escrito. Son dos pasos.
+
+### Paso 1 — Deja los archivos en `images/`
+
+| Archivo | Para qué | Obligatorio |
+|---|---|---|
+| `images/logo.svg` | Header, sobre fondo claro | Sí |
+| `images/logo-claro.svg` | Footer, sobre fondo verde oscuro | Recomendado |
+
+**Formato:** SVG es lo mejor, se ve nítido en cualquier pantalla. Si solo
+tienes PNG, que sea de al menos **600px de ancho** y con fondo transparente.
+
+**Proporción:** el logo se muestra a 44px de alto en el header. Un logo
+horizontal (tipo 4:1) es lo que mejor calza. Uno muy alto y angosto se verá
+diminuto.
+
+**La versión clara:** el footer tiene fondo verde oscuro. Si tu logo es verde
+o negro, ahí no se va a ver. Por eso conviene una segunda versión en blanco.
+Si no la tienes, deja `archivoClaro` vacío y se usará el mismo de siempre.
+
+### Paso 2 — Apunta a los archivos en `data/site.js`
+
+Busca el bloque `logo` (está al principio del archivo) y completa las rutas:
+
+```javascript
+logo: {
+  archivo: 'images/logo.svg',
+  archivoClaro: 'images/logo-claro.svg',
+  alt: 'Casa de Reposo Claudia Lastra',
+  alto: 44,
+  altoFooter: 40,
+  incluyeNombre: true,
+},
+```
+
+**`incluyeNombre` es el que decide qué se muestra:**
+
+- `true` → tu archivo ya trae el nombre escrito dentro. Se muestra solo la imagen.
+- `false` → tu archivo es solo el símbolo, sin letras. Se muestra la imagen y
+  al lado el nombre en texto.
+
+Después:
+
+```bash
+npm run deploy
+```
+
+### Si algo sale mal
+
+Si la ruta está mal escrita o el archivo no existe, la página **vuelve sola
+al nombre en texto**. Nunca vas a dejar el header vacío por un error de tipeo.
+Si no ves el logo después de publicar, revisa que el nombre del archivo
+coincida exactamente, incluidas mayúsculas y la extensión.
+
+### El favicon (el iconito de la pestaña)
+
+Es aparte, y hoy es un dibujo genérico de una casa. Para cambiarlo, reemplaza
+`images/favicon.svg` por tu símbolo. Que sea **cuadrado** y simple: se ve a
+16px, así que un logo con texto no se va a leer. Usa solo el símbolo.
+
+---
+
 ## 📷 Cómo reemplazar imágenes
 
 Lee el archivo **`FOTOS-A-REEMPLAZAR.md`** para instrucciones detalladas.
@@ -331,14 +396,16 @@ contiene tokens ni secretos.
 ### Conectar un dominio propio
 
 1. En el panel de Cloudflare: **Workers & Pages → casa-de-reposo → Settings → Domains & Routes**.
-2. Agrega el dominio (ej: `casadereposo.cl`). Requiere que el dominio esté en la cuenta.
+2. Agrega el dominio que compres. Requiere que el dominio esté en la cuenta de Cloudflare.
 3. Actualiza `canonicalUrl` en `data/site.js` y las URL de `sitemap.xml`:
 
 ```javascript
 seo: {
-  canonicalUrl: 'https://casadereposo.cl',
+  canonicalUrl: 'https://tu-dominio.cl',
 }
 ```
+
+Y también las dos URL de `sitemap.xml` y la de `robots.txt`.
 
 ---
 

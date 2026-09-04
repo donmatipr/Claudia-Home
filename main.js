@@ -63,6 +63,39 @@ const ICO = {
   ubicacion: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg>`,
 };
 
+// ─── Logo ─────────────────────────────────────────────────────
+// Devuelve la marca lista para insertar. Si no hay archivo configurado,
+// o si el archivo no carga, queda el nombre escrito. El atributo
+// data-con-logo es el que decide cuál de los dos se ve.
+function buildLogo({ oscuro = false } = {}) {
+  const L = SITE.logo || {};
+  const archivo = oscuro ? (L.archivoClaro || L.archivo) : L.archivo;
+  const alto = oscuro ? (L.altoFooter || 40) : (L.alto || 44);
+
+  const texto = `
+    <span class="logo__texto">
+      <span class="logo__nombre">Casa de Reposo</span>
+      <span class="logo__apellido">Claudia Lastra</span>
+    </span>`;
+
+  if (!archivo) return texto;
+
+  // Si el archivo no existe, se marca el contenedor y reaparece el texto.
+  // El orden importa: hay que marcar el contenedor antes de quitar la
+  // imagen, porque al removerla ya no puede encontrarlo con closest().
+  const respaldo =
+    "var c=this.closest('[data-con-logo]');if(c)c.dataset.conLogo='no';this.remove()";
+
+  return `
+    <img
+      src="${archivo}"
+      alt="${L.alt || SITE.nombre}"
+      class="logo__img"
+      style="height:${alto}px"
+      onerror="${respaldo}"
+    >${texto}`;
+}
+
 // ─── Imagen con fallback ──────────────────────────────────────
 function imgOrPlaceholder(src, alt, caption = '') {
   return `
@@ -122,10 +155,13 @@ function buildHeader() {
 <header class="header" id="header" role="banner">
   <div class="container">
     <div class="header__inner">
-      <a href="#inicio" class="header__logo" aria-label="Casa de Reposo Claudia Lastra — Inicio">
-        <span class="header__logo-main">Casa de Reposo</span>
-        <span class="header__logo-sub">Claudia Lastra</span>
-      </a>
+      <a
+        href="#inicio"
+        class="header__logo"
+        aria-label="Casa de Reposo Claudia Lastra — Inicio"
+        data-con-logo="${SITE.logo && SITE.logo.archivo ? 'si' : 'no'}"
+        data-logo-con-nombre="${SITE.logo && SITE.logo.incluyeNombre ? 'si' : 'no'}"
+      >${buildLogo()}</a>
       <nav class="header__nav" id="main-nav" aria-label="Navegación principal">
         <ul class="nav__list" role="list">
           ${navItems.map(([href, label]) => `
@@ -844,7 +880,11 @@ function buildFooter() {
     <div class="footer__grid">
       <!-- Marca -->
       <div>
-        <div class="footer__logo">Casa de Reposo Claudia Lastra</div>
+        <div
+          class="footer__logo"
+          data-con-logo="${SITE.logo && (SITE.logo.archivoClaro || SITE.logo.archivo) ? 'si' : 'no'}"
+          data-logo-con-nombre="${SITE.logo && SITE.logo.incluyeNombre ? 'si' : 'no'}"
+        >${buildLogo({ oscuro: true })}</div>
         <p class="footer__tagline">Un hogar cercano, cuidado y acompañado todos los días. Sedes en Macul y Ñuñoa, Santiago.</p>
         <div class="footer__social">
           <a

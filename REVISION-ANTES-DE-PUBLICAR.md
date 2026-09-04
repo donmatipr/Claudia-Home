@@ -49,10 +49,10 @@ Este archivo contiene todos los puntos que deben **confirmarse con Claudia Lastr
 
 | # | Dato | Estado | Acción requerida |
 |---|------|--------|-----------------|
-| 12 | Dominio web | ⏳ Pendiente | Confirmar el dominio final (ej: casadereposo.cl) y actualizar `canonicalUrl` en `data/site.js` |
-| 13 | URL canónica | ⏳ Pendiente | Actualizar en `data/site.js` → `seo.canonicalUrl` |
-| 14 | Imágenes en Open Graph | ⏳ Pendiente | Actualizar las URL de imágenes en `index.html` con el dominio real |
-| 15 | Sitemap | ⏳ Pendiente | Actualizar las URL en `sitemap.xml` con el dominio real |
+| 12 | Dominio web | ✅ Resuelto | Se publica en `casa-de-reposo.victormatiaspoblete.workers.dev`. No se usará dominio propio. |
+| 13 | URL canónica | ✅ Resuelto | Apunta a la URL publicada |
+| 14 | Imágenes en Open Graph | ✅ Resuelto | Apuntan a la URL publicada |
+| 15 | Sitemap | ✅ Resuelto | Apunta a la URL publicada |
 
 ---
 
