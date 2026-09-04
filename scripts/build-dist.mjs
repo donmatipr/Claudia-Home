@@ -72,6 +72,9 @@ const ASSETS = [
   'styles/globals.css',
   'styles/components.css',
   'images/favicon.svg',
+  'images/apple-touch-icon.png',
+  'images/icon-192.png',
+  'images/icon-512.png',
 ];
 
 const huellas = {};
