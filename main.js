@@ -33,6 +33,7 @@ const ICONS = {
   map: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
   phone: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.9a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6.1 6.1l1.06-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
   instagram: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>`,
+  facebook: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true" focusable="false"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.92 3.77-3.92 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.9h2.78l-.45 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>`,
 };
 
 // ─── Imagen con fallback ──────────────────────────────────────
@@ -64,6 +65,7 @@ function buildPage() {
       ${buildForFamilies()}
       ${buildServices()}
       ${buildDailyLife()}
+      ${buildTagline()}
       ${buildGallery()}
       ${buildLocations()}
       ${buildProcess()}
@@ -105,7 +107,23 @@ function buildHeader() {
         </ul>
       </nav>
       <div class="header__actions">
-        <a 
+        <a
+          href="${SITE.instagramUrl}"
+          class="header__social"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram ${SITE.instagram}"
+          data-track="instagram_click"
+        >${ICONS.instagram}</a>
+        <a
+          href="${SITE.facebookUrl}"
+          class="header__social"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook de Casa de Reposo Claudia Lastra"
+          data-track="facebook_click"
+        >${ICONS.facebook}</a>
+        <a
           href="${waLink(WA_MSG_GENERAL)}"
           class="header__wa-icon"
           target="_blank"
@@ -140,14 +158,13 @@ function buildHero() {
   return `
 <section class="hero" id="inicio" aria-labelledby="hero-title">
   <div class="hero__bg" aria-hidden="true">
-    <img 
-      src="images/hero-residencia.webp" 
+    <img
+      src="images/hero-residencia.webp"
       alt=""
       class="hero__bg-img"
       onerror="this.style.display='none'"
     >
     <div class="hero__bg-overlay"></div>
-    <div class="hero__bg-placeholder"></div>
   </div>
   <div class="container">
     <div class="hero__content fade-in">
@@ -155,27 +172,30 @@ function buildHero() {
         🌿 Sedes en Macul y Ñuñoa, Santiago
       </div>
       <h1 id="hero-title" class="hero__title">
-        Un hogar cercano,<br>
-        <em>cuidado y acompañado</em><br>
-        todos los días
+        Cuidado las 24 horas<br>
+        para tu madre o tu padre,<br>
+        <em>donde se sienta en casa</em>
       </h1>
       <p class="hero__subtitle">
-        En Casa de Reposo Claudia Lastra acompañamos a cada residente con cuidado permanente, alimentación diaria, actividades terapéuticas y un ambiente familiar.
+        Residencia para personas mayores en Macul y Ñuñoa. Cuidadoras presentes de día y de noche, cuatro comidas diarias y ocho horas semanales de kinesiología y terapia ocupacional.
       </p>
       <div class="hero__actions">
-        <a 
-          href="#contacto"
-          class="btn btn-primary btn-lg"
-          data-track="schedule_visit_click"
-        >${ICONS.calendar} Agendar una visita</a>
-        <a 
+        <a
           href="${waLink(WA_MSG_GENERAL)}"
           class="btn btn-whatsapp btn-lg"
           target="_blank"
           rel="noopener noreferrer"
           data-track="whatsapp_click"
-        >${ICONS.whatsapp} Consultar por WhatsApp</a>
+        >${ICONS.whatsapp} Escribir por WhatsApp</a>
+        <a
+          href="#contacto"
+          class="btn btn-outline-white btn-lg"
+          data-track="schedule_visit_click"
+        >${ICONS.calendar} Agendar una visita</a>
       </div>
+      <p class="hero__reassurance">
+        Conocer la residencia no tiene costo ni compromiso.
+      </p>
       <div class="hero__trust" aria-label="Ubicaciones">
         <span class="hero__trust-dot"></span>
         Sede Macul — Manuel Sánchez 3234
@@ -190,9 +210,9 @@ function buildHero() {
 // ─── TRUST BELT ───────────────────────────────────────────────
 function buildTrustBelt() {
   const items = [
-    { icon: '⏰', value: 'Cuidadoras', label: 'presentes las 24 horas' },
-    { icon: '🍽️', value: '4 comidas', label: 'diarias con orientación nutricional' },
-    { icon: '🤸', value: 'Terapias', label: 'semanales de kinesio y T. ocupacional' },
+    { icon: '⏰', value: '24 horas', label: 'con cuidadoras presentes, todos los días del año' },
+    { icon: '🍽️', value: '4 comidas', label: 'diarias, con nutricionista una vez al mes' },
+    { icon: '🤸', value: '8 horas', label: 'semanales de kinesiología y terapia ocupacional' },
     { icon: '📍', value: '2 sedes', label: 'en Macul y Ñuñoa, Santiago' },
   ];
   return `
@@ -228,7 +248,7 @@ function buildForFamilies() {
           alt="Espacio común cálido y acogedor de la residencia"
           class="for-families__img"
           loading="lazy"
-          onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>🏡<br>Espacio de la residencia</div>'"
+          onerror="this.parentElement.innerHTML='&lt;div class=&quot;img-placeholder&quot;&gt;🏡&lt;br&gt;Espacio de la residencia&lt;/div&gt;'"
         >
       </div>
       <div class="for-families__text fade-in">
@@ -343,6 +363,28 @@ function buildDailyLife() {
 </section>`;
 }
 
+// ─── TAGLINE ──────────────────────────────────────────────────
+// Cada palabra se enciende por separado al entrar en pantalla.
+function buildTagline() {
+  const lineas = [
+    'Aquí nadie pasa el día solo.',
+    'Alguien conversa, alguien acompaña,',
+    'y de noche siempre hay alguien atento.',
+  ];
+  const html = lineas
+    .map(linea => `<span class="tagline__line">${linea
+      .split(' ')
+      .map(palabra => `<span class="tagline__word">${palabra}</span>`)
+      .join(' ')}</span>`)
+    .join('');
+  return `
+<section class="tagline" id="tagline" aria-labelledby="tagline-text">
+  <div class="container">
+    <p class="tagline__text" id="tagline-text">${html}</p>
+  </div>
+</section>`;
+}
+
 // ─── GALERÍA ──────────────────────────────────────────────────
 function buildGallery() {
   return `
@@ -402,7 +444,7 @@ function buildLocations() {
               alt="Fachada de ${sede.nombre}"
               class="location-card__img"
               loading="lazy"
-              onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'height:220px\'>🏡<br>${sede.nombre}</div>'"
+              onerror="this.parentElement.innerHTML='&lt;div class=&quot;img-placeholder&quot; style=&quot;height:220px&quot;&gt;🏡&lt;br&gt;${sede.nombre}&lt;/div&gt;'"
             >
           </div>
           <div class="location-card__body">
@@ -586,7 +628,7 @@ function buildContact() {
               <span style="font-size:0.85rem;color:var(--color-text-secondary)">${SITE.telefono}</span>
             </div>
           </a>
-          <a 
+          <a
             href="${SITE.instagramUrl}"
             class="contact__direct-item"
             target="_blank"
@@ -598,6 +640,20 @@ function buildContact() {
             <div>
               <strong>Instagram</strong><br>
               <span style="font-size:0.85rem;color:var(--color-text-secondary)">${SITE.instagram}</span>
+            </div>
+          </a>
+          <a
+            href="${SITE.facebookUrl}"
+            class="contact__direct-item"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-track="facebook_click"
+            aria-label="Visitar la página de Facebook de Casa de Reposo Claudia Lastra"
+          >
+            <span class="contact__direct-icon contact__direct-icon--fb" aria-hidden="true">${ICONS.facebook}</span>
+            <div>
+              <strong>Facebook</strong><br>
+              <span style="font-size:0.85rem;color:var(--color-text-secondary)">${SITE.facebook}</span>
             </div>
           </a>
         </div>
@@ -728,7 +784,7 @@ function buildFooter() {
         <div class="footer__logo">Casa de Reposo Claudia Lastra</div>
         <p class="footer__tagline">Un hogar cercano, cuidado y acompañado todos los días. Sedes en Macul y Ñuñoa, Santiago.</p>
         <div class="footer__social">
-          <a 
+          <a
             href="${SITE.instagramUrl}"
             class="footer__social-link"
             target="_blank"
@@ -736,7 +792,15 @@ function buildFooter() {
             aria-label="Instagram ${SITE.instagram}"
             data-track="instagram_click"
           >${ICONS.instagram}</a>
-          <a 
+          <a
+            href="${SITE.facebookUrl}"
+            class="footer__social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook de Casa de Reposo Claudia Lastra"
+            data-track="facebook_click"
+          >${ICONS.facebook}</a>
+          <a
             href="${waLink(WA_MSG_GENERAL)}"
             class="footer__social-link"
             target="_blank"
@@ -837,12 +901,17 @@ function buildMobileBar() {
 
 // ─── Inicializar interactividad ───────────────────────────────
 function initInteractivity() {
-  // Header scroll
+  // Header scroll — con un centinela para no escuchar el scroll en cada frame
   const header = document.getElementById('header');
   if (header) {
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('is-scrolled', window.scrollY > 16);
-    }, { passive: true });
+    const sentinel = document.createElement('div');
+    sentinel.setAttribute('aria-hidden', 'true');
+    sentinel.style.cssText = 'position:absolute;top:16px;height:1px;width:1px;pointer-events:none';
+    document.body.prepend(sentinel);
+    new IntersectionObserver(
+      ([entry]) => header.classList.toggle('is-scrolled', !entry.isIntersecting),
+      { threshold: 0 }
+    ).observe(sentinel);
   }
 
   // Hamburger menu
@@ -923,6 +992,9 @@ function initInteractivity() {
   // Animaciones fade-in
   initFadeIn();
 
+  // Revelado palabra por palabra del tagline
+  initTaglineReveal();
+
   // Tracking de eventos
   initTracking();
 }
@@ -997,11 +1069,15 @@ Me gustaría recibir información y coordinar una visita.`;
 
 // ─── Fade in con IntersectionObserver ────────────────────────
 function initFadeIn() {
+  const elementos = document.querySelectorAll('.fade-in');
+  const mostrarTodo = () => elementos.forEach(el => el.classList.add('is-visible'));
+
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReduced) {
-    document.querySelectorAll('.fade-in').forEach(el => el.classList.add('is-visible'));
+  if (prefersReduced || !('IntersectionObserver' in window)) {
+    mostrarTodo();
     return;
   }
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1011,7 +1087,46 @@ function initFadeIn() {
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  elementos.forEach(el => observer.observe(el));
+
+  // Red de seguridad: el contenido arranca en opacity 0. Si el observador
+  // no alcanzó a marcar nada, se muestra todo antes que la página quede vacía.
+  setTimeout(() => {
+    if (!document.querySelector('.fade-in.is-visible')) mostrarTodo();
+  }, 1500);
+}
+
+// ─── Revelado del tagline ────────────────────────────────────
+// Cada palabra cruza su propia línea de disparo y pasa del tono
+// apagado al color pleno, en orden de lectura.
+function initTaglineReveal() {
+  const palabras = document.querySelectorAll('.tagline__word');
+  if (!palabras.length) return;
+
+  const encender = () => palabras.forEach(p => p.classList.add('is-lit'));
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced || !('IntersectionObserver' in window)) {
+    encender();
+    return;
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-lit');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5, rootMargin: '0px 0px -25% 0px' });
+
+  palabras.forEach(p => observer.observe(p));
+
+  // El texto apagado tiene contraste bajo a propósito. Si el observador
+  // no responde, se enciende para que siga siendo legible.
+  setTimeout(() => {
+    if (!document.querySelector('.tagline__word.is-lit')) encender();
+  }, 3000);
 }
 
 // ─── Tracking ────────────────────────────────────────────────

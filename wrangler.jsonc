@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developers.cloudflare.com/schema/wrangler.json",
+  "name": "casa-de-reposo",
+  "compatibility_date": "2026-09-03",
+
+  // Worker de solo assets estáticos: no hay script `main`.
+  // dist/ lo arma scripts/build-dist.mjs con una lista de permitidos,
+  // así nunca se publica documentación ni código fuente por descuido.
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+
+  "observability": {
+    "enabled": true
+  }
+}

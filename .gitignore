@@ -11,3 +11,6 @@ Thumbs.db
 
 # Sourcemaps generados por el build (no subir al repo)
 bundle.js.map
+
+# Configuración local del editor/agente
+.claude/

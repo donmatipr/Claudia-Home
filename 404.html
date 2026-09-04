@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada — Casa de Reposo Claudia Lastra</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#254A36">
+
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="apple-touch-icon" href="/images/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/globals.css">
+  <link rel="stylesheet" href="/styles/components.css">
+
+  <style>
+    .nf {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--color-green-forest);
+      padding: 48px 0;
+    }
+    .nf__content { max-width: 560px; margin: 0 auto; }
+    .nf__code {
+      font-family: var(--font-serif);
+      font-size: clamp(48px, 10vw, 96px);
+      font-weight: 700;
+      color: var(--color-green-pastel);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .nf__title {
+      color: var(--color-white);
+      font-size: clamp(24px, 4vw, 36px);
+      margin-bottom: 16px;
+    }
+    .nf__text {
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 40px;
+    }
+    .nf__actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 600px) {
+      .nf__actions { flex-direction: column; }
+      .nf__actions .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <main class="nf" id="main-content">
+    <div class="container">
+      <div class="nf__content">
+        <p class="nf__code" aria-hidden="true">404</p>
+        <h1 class="nf__title">Esta página no existe</h1>
+        <p class="nf__text">
+          Puede que el enlace esté antiguo o mal escrito. Vuelve al inicio para conocer la
+          residencia, o escríbenos y te orientamos directamente.
+        </p>
+        <div class="nf__actions">
+          <a href="/" class="btn btn-whatsapp btn-lg" style="background:var(--color-green-pastel);color:#1a3828">
+            Volver al inicio
+          </a>
+          <a
+            href="https://wa.me/56999010921?text=Hola%2C%20me%20comunico%20desde%20el%20sitio%20web%20de%20Casa%20de%20Reposo%20Claudia%20Lastra.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20y%20coordinar%20una%20visita."
+            class="btn btn-outline-white btn-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Escribir por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -16,7 +16,9 @@ export const SITE = {
   telefonoHref: 'tel:+56999010921',
   whatsappNumero: '56999010921',
   instagram: '@casadereposo.cl',
-  instagramUrl: 'https://www.instagram.com/casadereposo.cl',
+  instagramUrl: 'https://www.instagram.com/casadereposo.cl/',
+  facebook: 'Casa de Reposo Claudia Lastra',
+  facebookUrl: 'https://www.facebook.com/profile.php?id=61578537031370',
 
   // ─── Sedes ───────────────────────────────────────────────
   sedes: [
@@ -210,7 +212,7 @@ export const SITE = {
   seo: {
     titleTag: 'Casa de Reposo Claudia Lastra — Residencia para personas mayores en Macul y Ñuñoa',
     metaDescription:
-      'Residencia para personas mayores en Macul y Ñuñoa, Santiago. Cuidadoras 24/7, alimentación diaria, kinesiología y terapia ocupacional. Agende una visita hoy.',
+      'Residencia para personas mayores en Macul y Ñuñoa, Santiago. Cuidadoras las 24 horas, 4 comidas diarias y 8 horas semanales de kinesiología y terapia ocupacional. Agenda una visita sin costo.',
     canonicalUrl: 'https://casadereposo.cl', // Actualizar con dominio real
     ogImage: 'images/hero-residencia.webp',
   },

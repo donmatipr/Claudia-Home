@@ -244,32 +244,52 @@ git push origin main
 
 ---
 
-## 🌐 Publicar en Vercel (gratis)
+## 🌐 Publicar en Cloudflare
 
-Vercel es la forma más sencilla de publicar este sitio.
+El sitio está desplegado como **Worker con Static Assets** de Cloudflare.
 
-### Primera vez
+**URL en vivo:** https://casa-de-reposo.victormatiaspoblete.workers.dev
 
-1. Crea una cuenta en [vercel.com](https://vercel.com) (gratis).
-2. Haz clic en **"Add New Project"**.
-3. Elige **"Import Git Repository"** y selecciona este repositorio de GitHub.
-4. En la configuración del proyecto:
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `.` (punto, la raíz del proyecto)
-   - **Install Command:** `npm install`
-5. Haz clic en **"Deploy"**.
-6. ¡Listo! Vercel te dará una URL pública.
+### Publicar cambios (redeploy)
 
-### Publicar cambios (automático)
+Un solo comando. Compila `main.js`, arma `dist/` y sube a Cloudflare:
 
-Si el repositorio de GitHub está conectado a Vercel, **cada push a `main` publica automáticamente** la versión nueva.
+```bash
+npm run deploy
+```
+
+Eso equivale a:
+
+```bash
+npm run build && node scripts/build-dist.mjs && npx wrangler@4.129.0 deploy
+```
+
+Requiere estar autenticado una sola vez con `npx wrangler login`.
+
+### Qué se publica y qué no
+
+`scripts/build-dist.mjs` arma la carpeta `dist/` con una **lista de permitidos**:
+solo llega a producción lo que está nombrado en ese archivo.
+
+Se publica: `index.html`, `privacidad.html`, `404.html`, `bundle.js`,
+`robots.txt`, `sitemap.xml`, `manifest.webmanifest`, `_headers`, `images/`, `styles/`.
+
+**No** se publica el código fuente (`main.js`, `data/`), el sourcemap, ni la
+documentación interna — en particular `REVISION-ANTES-DE-PUBLICAR.md`, que es de
+uso interno. Si agregas un archivo público nuevo, súmalo a la lista `PUBLICAR`
+del script o no se subirá.
+
+### Configuración
+
+`wrangler.jsonc` define el nombre del Worker, la carpeta de assets y el manejo
+de 404. `_headers` define cabeceras de seguridad y de caché. Ninguno de los dos
+contiene tokens ni secretos.
 
 ### Conectar un dominio propio
 
-1. En Vercel: **Settings → Domains**.
-2. Escribe tu dominio (ej: `casadereposo.cl`) y haz clic en **Add**.
-3. Sigue las instrucciones de Vercel para apuntar el DNS.
-4. Actualiza `canonicalUrl` en `data/site.js`:
+1. En el panel de Cloudflare: **Workers & Pages → casa-de-reposo → Settings → Domains & Routes**.
+2. Agrega el dominio (ej: `casadereposo.cl`). Requiere que el dominio esté en la cuenta.
+3. Actualiza `canonicalUrl` en `data/site.js` y las URL de `sitemap.xml`:
 
 ```javascript
 seo: {
