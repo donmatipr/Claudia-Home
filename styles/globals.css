@@ -4,7 +4,7 @@
    ============================================================ */
 
 /* ── Google Fonts ── */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 /* ── Variables de diseño ── */
 :root {
@@ -34,10 +34,23 @@
   --radius-xl:  32px;
   --radius-pill:999px;
 
-  /* Tipografía */
-  --font-serif:  'Lora', Georgia, serif;
-  --font-sans:   'Inter', system-ui, sans-serif;
-  --text-base:   18px;
+  /* Tipografía — una sola familia para todo el sitio */
+  --font-sans:  'Manrope', system-ui, sans-serif;
+  /* Alias para no romper reglas que aún lo referencian */
+  --font-serif: var(--font-sans);
+
+  /* Escala tipográfica. Cada tamaño va con su interlineado. */
+  --text-xs:    12px;  --leading-xs:   16px;
+  --text-sm:    14px;  --leading-sm:   20px;
+  --text-base:  16px;  --leading-base: 24px;
+  --text-lg:    18px;  --leading-lg:   28px;
+  --text-xl:    20px;  --leading-xl:   28px;
+  --text-2xl:   24px;  --leading-2xl:  32px;
+  --text-3xl:   30px;  --leading-3xl:  36px;
+  --text-4xl:   36px;  --leading-4xl:  40px;
+  --text-5xl:   48px;  --leading-5xl:  1;
+  --text-6xl:   60px;  --leading-6xl:  1;
+
   --leading-relaxed: 1.75;
   --leading-snug:    1.35;
 
@@ -52,6 +65,7 @@
   --transition-fast:   0.18s var(--ease-fluid);
   --transition-base:   0.28s var(--ease-fluid);
   --transition-slow:   0.7s var(--ease-fluid);
+  --transition-reveal: 0.8s var(--ease-fluid);
 }
 
 /* ── Prefer reduced motion ── */
@@ -72,14 +86,15 @@
 }
 
 html {
-  font-size: var(--text-base);
+  font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   font-family: var(--font-sans);
-  font-size: 1rem;
+  /* 18px de base: la audiencia lee en pantallas de celular y con vista cansada */
+  font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
   color: var(--color-text-main);
   background-color: var(--color-ivory);
@@ -94,9 +109,9 @@ body {
   z-index: 9999;
   background: var(--color-green-forest);
   color: var(--color-white);
-  padding: 12px 20px;
+  padding: 12px 16px;
   border-radius: var(--radius-sm);
-  font-size: 1rem;
+  font-size: var(--text-lg);
   font-weight: 600;
   text-decoration: none;
   transition: top var(--transition-base);
@@ -114,10 +129,10 @@ h1, h2, h3, h4 {
   text-wrap: balance;
 }
 
-h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 700; }
-h2 { font-size: clamp(1.6rem, 4vw, 2.5rem); font-weight: 600; }
-h3 { font-size: clamp(1.15rem, 2.5vw, 1.4rem); font-weight: 600; }
-h4 { font-size: 1.1rem; font-weight: 600; }
+h1 { font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl)); font-weight: 700; }
+h2 { font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl)); font-weight: 700; }
+h3 { font-size: clamp(var(--text-xl), 2.5vw, var(--text-2xl)); font-weight: 600; }
+h4 { font-size: var(--text-lg); line-height: var(--leading-lg); font-weight: 600; }
 
 p  { line-height: var(--leading-relaxed); text-wrap: pretty; }
 
@@ -142,8 +157,12 @@ img {
 
 ul, ol { list-style: none; }
 
-button {
+button, input, select, textarea {
   font-family: var(--font-sans);
+  /* Sin esto el navegador impone 13.33px, fuera de la escala */
+  font-size: inherit;
+}
+button {
   cursor: pointer;
   border: none;
   background: none;
@@ -171,7 +190,7 @@ button {
 .section-label {
   display: inline-block;
   font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-size: var(--text-sm);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -183,7 +202,7 @@ button {
   color: var(--color-text-main);
 }
 .section-subtitle {
-  font-size: 1.1rem;
+  font-size: var(--text-lg);
   color: var(--color-text-secondary);
   max-width: 640px;
   line-height: 1.7;
@@ -205,10 +224,10 @@ button {
   justify-content: center;
   gap: 8px;
   min-height: 52px;
-  padding: 14px 32px;
+  padding: 12px 32px;
   border-radius: var(--radius-pill);
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: var(--text-base);
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
@@ -283,13 +302,13 @@ button {
 
 .btn-sm {
   min-height: 44px;
-  padding: 10px 22px;
-  font-size: 0.9rem;
+  padding: 8px 16px;
+  font-size: var(--text-sm);
 }
 .btn-lg {
-  min-height: 58px;
+  min-height: 64px;
   padding: 16px 40px;
-  font-size: 1.05rem;
+  font-size: var(--text-base);
 }
 
 /* ── Tarjetas ── */
@@ -312,9 +331,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--color-beige) 0%, #d9cfc2 100%);
+  background: var(--color-beige);
   color: var(--color-text-secondary);
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
   text-align: center;
   padding: 16px;
   min-height: 220px;
@@ -324,24 +343,29 @@ button {
 /* ── Animación fade-in ── */
 .fade-in {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  transform: translateY(40px);
+  filter: blur(4px);
+  transition:
+    opacity var(--transition-reveal),
+    transform var(--transition-reveal),
+    filter var(--transition-reveal);
 }
 .fade-in.is-visible {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0);
 }
 
 /* ── Badge / etiqueta ── */
 .badge {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   background: rgba(169, 197, 173, 0.25);
   color: var(--color-green-forest);
   padding: 4px 12px;
   border-radius: var(--radius-pill);
-  font-size: 0.8rem;
+  font-size: var(--text-sm);
   font-weight: 600;
 }
 

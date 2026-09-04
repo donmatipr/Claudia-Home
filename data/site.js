@@ -49,31 +49,31 @@ export const SITE = {
   // ─── Servicios incluidos regularmente ────────────────────
   serviciosIncluidos: [
     {
-      icono: '🏠',
+      icono: 'casa',
       titulo: 'Cuidado permanente',
       descripcion:
         'Cuidadoras presentes las 24 horas del día, todos los días del año, para acompañar y apoyar a cada residente en su rutina diaria.',
     },
     {
-      icono: '🍽️',
+      icono: 'comida',
       titulo: 'Alimentación diaria',
       descripcion:
         'Cuatro comidas al día preparadas con cariño: desayuno, almuerzo, once y cena, con orientación de nutricionista una vez al mes.',
     },
     {
-      icono: '🤸',
+      icono: 'movimiento',
       titulo: 'Kinesiología grupal',
       descripcion:
         'Cuatro horas semanales de kinesiología en grupo para mantener el movimiento, la movilidad y el bienestar físico de los residentes.',
     },
     {
-      icono: '🎨',
+      icono: 'arte',
       titulo: 'Terapia ocupacional',
       descripcion:
         'Cuatro horas semanales de actividades terapéuticas grupales que estimulan la creatividad, la concentración y la participación activa.',
     },
     {
-      icono: '🥗',
+      icono: 'nutricion',
       titulo: 'Orientación nutricional',
       descripcion:
         'Nutricionista que visita la residencia una vez al mes para orientar la alimentación y apoyar el bienestar de los residentes.',
@@ -83,25 +83,25 @@ export const SITE = {
   // ─── Apoyos según necesidad o coordinación ───────────────
   serviciosCoordinados: [
     {
-      icono: '🩺',
+      icono: 'enfermeria',
       titulo: 'Apoyo clínico coordinado',
       descripcion:
         'Enfermera disponible ante situaciones clínicas que requieran apoyo. El equipo coordina la atención de manera oportuna.',
     },
     {
-      icono: '⚕️',
+      icono: 'botiquin',
       titulo: 'TENS cuando corresponda',
       descripcion:
         'Apoyo de TENS disponible según requerimiento del residente y coordinación correspondiente.',
     },
     {
-      icono: '🏥',
+      icono: 'hospital',
       titulo: 'Tratamientos ambulatorios',
       descripcion:
         'Los tratamientos especiales de carácter ambulatorio pueden coordinarse y tienen costo adicional para la familia.',
     },
     {
-      icono: '📋',
+      icono: 'ficha',
       titulo: 'Consultorio o CESFAM',
       descripcion:
         'Se sugiere mantener o realizar la inscripción en el consultorio o CESFAM que corresponda al domicilio de la residencia.',
@@ -110,12 +110,12 @@ export const SITE = {
 
   // ─── Vida diaria ─────────────────────────────────────────
   vidaDiaria: [
-    { icono: '🍽️', texto: 'Alimentación nutritiva y preparada con cariño' },
-    { icono: '💬', texto: 'Conversación y compañía cada día' },
-    { icono: '🤸', texto: 'Movimiento y actividad física adaptada' },
-    { icono: '🎭', texto: 'Actividades grupales y estimulación' },
-    { icono: '😴', texto: 'Descanso tranquilo y acompañado' },
-    { icono: '👨‍👩‍👧', texto: 'Visitas de la familia a cualquier hora, sin horarios restringidos' },
+    { icono: 'comida', texto: 'Alimentación nutritiva y preparada con cariño' },
+    { icono: 'conversacion', texto: 'Conversación y compañía cada día' },
+    { icono: 'movimiento', texto: 'Movimiento y actividad física adaptada' },
+    { icono: 'actividades', texto: 'Actividades grupales y estimulación' },
+    { icono: 'descanso', texto: 'Descanso tranquilo y acompañado' },
+    { icono: 'familia', texto: 'Visitas de la familia a cualquier hora, sin horarios restringidos' },
   ],
 
   // ─── Visitas de familiares ───────────────────────────────
@@ -129,9 +129,9 @@ export const SITE = {
     cierre:
       'Lo hacemos por una razón simple: la presencia de la familia forma parte del cuidado. Una residencia que limita las visitas suele tener algo que ordenar antes de recibirte. Aquí puedes llegar sin aviso y ver exactamente cómo vive tu familiar cualquier día del año.',
     puntos: [
-      { icono: '🌅', texto: 'Mañana, tarde o noche' },
-      { icono: '📅', texto: 'Todos los días, incluidos festivos' },
-      { icono: '🔓', texto: 'Sin aviso previo ni autorización' },
+      { icono: 'amanecer', texto: 'Mañana, tarde o noche' },
+      { icono: 'calendario', texto: 'Todos los días, incluidos festivos' },
+      { icono: 'candado', texto: 'Sin aviso previo ni autorización' },
     ],
     ctaTexto: 'Consultar por una visita',
     whatsappMensaje:

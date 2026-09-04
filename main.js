@@ -36,6 +36,33 @@ const ICONS = {
   facebook: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true" focusable="false"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.92 3.77-3.92 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.9h2.78l-.45 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>`,
 };
 
+// ─── Iconografía (Phosphor, trazos incrustados) ───────────────
+// Se usan SVG en vez de emoji: los emoji cambian de forma según el
+// sistema operativo y no heredan el color de la marca.
+const ICO = {
+  actividades: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M217,34.8a15.94,15.94,0,0,0-14.82-1.71C188.15,38.55,159.82,47.71,128,47.71S67.84,38.55,53.79,33.09A16,16,0,0,0,32,48v55.77c0,35.84,9.65,69.65,27.18,95.18,18.16,26.46,42.6,41,68.82,41s50.66-14.57,68.82-41C214.35,173.44,224,139.63,224,103.79V48A16,16,0,0,0,217,34.8Zm-9,69c0,32.64-8.66,63.23-24.37,86.13C168.54,211.9,148.79,224,128,224s-40.54-12.1-55.63-34.08C56.66,167,48,136.43,48,103.79V48c15.11,5.87,45.58,15.71,80,15.71S192.9,53.87,208,48v55.81Zm-18,18.87A8,8,0,1,1,178,133.33c-2.68-3-8.85-5.33-14-5.33s-11.36,2.34-14,5.33A8,8,0,1,1,138,122.66c5.71-6.38,16.14-10.66,26-10.66S184.25,116.28,190,122.66ZM92,128c-5.19,0-11.36,2.34-14,5.33A8,8,0,1,1,66,122.66C71.75,116.28,82.18,112,92,112s20.25,4.28,26,10.66A8,8,0,1,1,106,133.33C103.36,130.34,97.19,128,92,128Zm76.45,45.19a52.9,52.9,0,0,1-80.9,0A8,8,0,1,1,99.72,162.8a36.89,36.89,0,0,0,56.56,0,8,8,0,0,1,12.17,10.39Z"/></svg>`,
+  amanecer: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M240,152H199.55a73.54,73.54,0,0,0,.45-8,72,72,0,0,0-144,0,73.54,73.54,0,0,0,.45,8H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM72,144a56,56,0,1,1,111.41,8H72.59A56.13,56.13,0,0,1,72,144Zm144,56a8,8,0,0,1-8,8H48a8,8,0,0,1,0-16H208A8,8,0,0,1,216,200ZM72.84,43.58a8,8,0,0,1,14.32-7.16l8,16a8,8,0,0,1-14.32,7.16Zm-56,48.84a8,8,0,0,1,10.74-3.57l16,8a8,8,0,0,1-7.16,14.31l-16-8A8,8,0,0,1,16.84,92.42Zm192,15.16a8,8,0,0,1,3.58-10.73l16-8a8,8,0,1,1,7.16,14.31l-16,8a8,8,0,0,1-10.74-3.58Zm-48-55.16,8-16a8,8,0,0,1,14.32,7.16l-8,16a8,8,0,1,1-14.32-7.16Z"/></svg>`,
+  arte: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M200.77,53.89A103.27,103.27,0,0,0,128,24h-1.07A104,104,0,0,0,24,128c0,43,26.58,79.06,69.36,94.17A32,32,0,0,0,136,192a16,16,0,0,1,16-16h46.21a31.81,31.81,0,0,0,31.2-24.88,104.43,104.43,0,0,0,2.59-24A103.28,103.28,0,0,0,200.77,53.89Zm13,93.71A15.89,15.89,0,0,1,198.21,160H152a32,32,0,0,0-32,32,16,16,0,0,1-21.31,15.07C62.49,194.3,40,164,40,128a88,88,0,0,1,87.09-88h.9a88.35,88.35,0,0,1,88,87.25A88.86,88.86,0,0,1,213.81,147.6ZM140,76a12,12,0,1,1-12-12A12,12,0,0,1,140,76ZM96,100A12,12,0,1,1,84,88,12,12,0,0,1,96,100Zm0,56a12,12,0,1,1-12-12A12,12,0,0,1,96,156Zm88-56a12,12,0,1,1-12-12A12,12,0,0,1,184,100Z"/></svg>`,
+  botiquin: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,200H40V72H216V200Zm-56-64a8,8,0,0,1-8,8H136v16a8,8,0,0,1-16,0V144H104a8,8,0,0,1,0-16h16V112a8,8,0,0,1,16,0v16h16A8,8,0,0,1,160,136Z"/></svg>`,
+  calendario: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-68-76a12,12,0,1,1-12-12A12,12,0,0,1,140,132Zm44,0a12,12,0,1,1-12-12A12,12,0,0,1,184,132ZM96,172a12,12,0,1,1-12-12A12,12,0,0,1,96,172Zm44,0a12,12,0,1,1-12-12A12,12,0,0,1,140,172Zm44,0a12,12,0,1,1-12-12A12,12,0,0,1,184,172Z"/></svg>`,
+  camara: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H80a8,8,0,0,0,6.66-3.56L100.28,48h55.43l13.63,20.44A8,8,0,0,0,176,72h32a8,8,0,0,1,8,8ZM128,88a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,88Zm0,72a28,28,0,1,1,28-28A28,28,0,0,1,128,160Z"/></svg>`,
+  candado: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208,80H96V56a32,32,0,0,1,32-32c15.37,0,29.2,11,32.16,25.59a8,8,0,0,0,15.68-3.18C171.32,24.15,151.2,8,128,8A48.05,48.05,0,0,0,80,56V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80Zm0,128H48V96H208V208Zm-68-56a12,12,0,1,1-12-12A12,12,0,0,1,140,152Z"/></svg>`,
+  casa: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"/></svg>`,
+  check: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg>`,
+  comida: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M72,88V40a8,8,0,0,1,16,0V88a8,8,0,0,1-16,0ZM216,40V224a8,8,0,0,1-16,0V176H152a8,8,0,0,1-8-8,268.75,268.75,0,0,1,7.22-56.88c9.78-40.49,28.32-67.63,53.63-78.47A8,8,0,0,1,216,40ZM200,53.9c-32.17,24.57-38.47,84.42-39.7,106.1H200ZM119.89,38.69a8,8,0,1,0-15.78,2.63L112,88.63a32,32,0,0,1-64,0l7.88-47.31a8,8,0,1,0-15.78-2.63l-8,48A8.17,8.17,0,0,0,32,88a48.07,48.07,0,0,0,40,47.32V224a8,8,0,0,0,16,0V135.32A48.07,48.07,0,0,0,128,88a8.17,8.17,0,0,0-.11-1.31Z"/></svg>`,
+  conversacion: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"/></svg>`,
+  descanso: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"/></svg>`,
+  enfermeria: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M220,160a12,12,0,1,1-12-12A12,12,0,0,1,220,160Zm-4.55,39.29A48.08,48.08,0,0,1,168,240H144a48.05,48.05,0,0,1-48-48V151.49A64,64,0,0,1,40,88V40a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H56V88a48,48,0,0,0,48.64,48c26.11-.34,47.36-22.25,47.36-48.83V48H136a8,8,0,0,1,0-16h24a8,8,0,0,1,8,8V87.17c0,32.84-24.53,60.29-56,64.31V192a32,32,0,0,0,32,32h24a32.06,32.06,0,0,0,31.22-25,40,40,0,1,1,16.23.27ZM232,160a24,24,0,1,0-24,24A24,24,0,0,0,232,160Z"/></svg>`,
+  familia: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"/></svg>`,
+  ficha: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M168,152a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,152Zm-8-40H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm56-64V216a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V48A16,16,0,0,1,56,32H92.26a47.92,47.92,0,0,1,71.48,0H200A16,16,0,0,1,216,48ZM96,64h64a32,32,0,0,0-64,0ZM200,48H173.25A47.93,47.93,0,0,1,176,64v8a8,8,0,0,1-8,8H88a8,8,0,0,1-8-8V64a47.93,47.93,0,0,1,2.75-16H56V216H200Z"/></svg>`,
+  hoja: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M223.45,40.07a8,8,0,0,0-7.52-7.52C139.8,28.08,78.82,51,52.82,94a87.09,87.09,0,0,0-12.76,49c.57,15.92,5.21,32,13.79,47.85l-19.51,19.5a8,8,0,0,0,11.32,11.32l19.5-19.51C81,210.73,97.09,215.37,113,215.94q1.67.06,3.33.06A86.93,86.93,0,0,0,162,203.18C205,177.18,227.93,116.21,223.45,40.07ZM153.75,189.5c-22.75,13.78-49.68,14-76.71.77l88.63-88.62a8,8,0,0,0-11.32-11.32L65.73,179c-13.19-27-13-54,.77-76.71,22.09-36.47,74.6-56.44,141.31-54.06C210.2,114.89,190.22,167.41,153.75,189.5Z"/></svg>`,
+  hospital: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M248,208h-8V128a16,16,0,0,0-16-16H168V48a16,16,0,0,0-16-16H56A16,16,0,0,0,40,48V208H32a8,8,0,0,0,0,16H248a8,8,0,0,0,0-16Zm-24-80v80H168V128ZM56,48h96V208H136V160a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8v48H56Zm64,160H88V168h32ZM72,96a8,8,0,0,1,8-8H96V72a8,8,0,0,1,16,0V88h16a8,8,0,0,1,0,16H112v16a8,8,0,0,1-16,0V104H80A8,8,0,0,1,72,96Z"/></svg>`,
+  movimiento: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M152,88a32,32,0,1,0-32-32A32,32,0,0,0,152,88Zm0-48a16,16,0,1,1-16,16A16,16,0,0,1,152,40Zm67.31,100.68c-.61.28-7.49,3.28-19.67,3.28-13.85,0-34.55-3.88-60.69-20a169.31,169.31,0,0,1-15.41,32.34,104.29,104.29,0,0,1,31.31,15.81C173.92,186.65,184,207.35,184,232a8,8,0,0,1-16,0c0-41.7-34.69-56.71-54.14-61.85-.55.7-1.12,1.41-1.69,2.1-19.64,23.8-44.25,36.18-71.63,36.18A92.29,92.29,0,0,1,31.2,208,8,8,0,0,1,32.8,192c25.92,2.58,48.47-7.49,67-30,12.49-15.14,21-33.61,25.25-47C86.13,92.35,61.27,111.63,61,111.84A8,8,0,1,1,51,99.36c1.5-1.2,37.22-29,89.51,6.57,45.47,30.91,71.93,20.31,72.18,20.19a8,8,0,1,1,6.63,14.56Z"/></svg>`,
+  nutricion: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M232,64H203.31l26.35-26.34a8,8,0,0,0-11.32-11.32L192,52.69V24a8,8,0,0,0-16,0V56.57a64,64,0,0,0-77.2,10.12l0,0,0,0,0,0c-40.1,39.39-70.25,133.08-73.19,142.45a16,16,0,0,0,21.26,21.26c9.37-2.94,103.18-33.13,142.47-73.21A64,64,0,0,0,199.43,80H232a8,8,0,0,0,0-16Zm-54.12,82c-8.94,9.12-21.25,17.8-34.85,25.73l-25.38-25.39a8,8,0,0,0-11.32,11.32l22.09,22.09c-40.87,21.19-86.32,35.42-87,35.63A7.93,7.93,0,0,0,40,216a7.93,7.93,0,0,0,.59-1.41c.29-.93,28-89.58,64-130.67l33.77,33.77a8,8,0,0,0,11.32-11.32L116.18,72.88A48,48,0,0,1,177.88,146Z"/></svg>`,
+  reloj: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></svg>`,
+  ubicacion: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg>`,
+};
+
 // ─── Imagen con fallback ──────────────────────────────────────
 function imgOrPlaceholder(src, alt, caption = '') {
   return `
@@ -47,7 +74,7 @@ function imgOrPlaceholder(src, alt, caption = '') {
       class="gallery__img"
     >
     <div class="gallery__placeholder" style="display:none" aria-hidden="true">
-      <span class="gallery__placeholder-icon">🏡</span>
+      <span class="gallery__placeholder-icon">${ICO.casa}</span>
       <span>${caption || alt}</span>
     </div>`;
 }
@@ -170,7 +197,7 @@ function buildHero() {
   <div class="container">
     <div class="hero__content fade-in">
       <div class="hero__eyebrow" aria-hidden="true">
-        🌿 Sedes en Macul y Ñuñoa, Santiago
+        ${ICO.hoja} Sedes en Macul y Ñuñoa, Santiago
       </div>
       <h1 id="hero-title" class="hero__title">
         Cuidado las 24 horas<br>
@@ -211,10 +238,10 @@ function buildHero() {
 // ─── TRUST BELT ───────────────────────────────────────────────
 function buildTrustBelt() {
   const items = [
-    { icon: '⏰', value: '24 horas', label: 'con cuidadoras presentes, todos los días del año' },
-    { icon: '🍽️', value: '4 comidas', label: 'diarias, con nutricionista una vez al mes' },
-    { icon: '🤸', value: '8 horas', label: 'semanales de kinesiología y terapia ocupacional' },
-    { icon: '📍', value: '2 sedes', label: 'en Macul y Ñuñoa, Santiago' },
+    { icon: ICO.reloj, value: '24 horas', label: 'con cuidadoras presentes, todos los días del año' },
+    { icon: ICO.comida, value: '4 comidas', label: 'diarias, con nutricionista una vez al mes' },
+    { icon: ICO.movimiento, value: '8 horas', label: 'semanales de kinesiología y terapia ocupacional' },
+    { icon: ICO.ubicacion, value: '2 sedes', label: 'en Macul y Ñuñoa, Santiago' },
   ];
   return `
 <section class="trust-belt" aria-label="Datos destacados de la residencia">
@@ -234,10 +261,10 @@ function buildTrustBelt() {
 // ─── PARA LAS FAMILIAS ────────────────────────────────────────
 function buildForFamilies() {
   const features = [
-    { icon: '👂', text: 'Te escuchamos con atención, sin presionarte ni apresurarte.' },
-    { icon: '🔍', text: 'Te explicamos con transparencia los servicios y cómo funciona la vida diaria.' },
-    { icon: '🤝', text: 'Te acompañamos durante todo el proceso de evaluación.' },
-    { icon: '🏡', text: 'Te invitamos a conocer la sede personalmente antes de decidir.' },
+    { icon: ICO.conversacion, text: 'Te escuchamos con atención, sin presionarte ni apresurarte.' },
+    { icon: ICO.ficha, text: 'Te explicamos con transparencia los servicios y cómo funciona la vida diaria.' },
+    { icon: ICO.familia, text: 'Te acompañamos durante todo el proceso de evaluación.' },
+    { icon: ICO.casa, text: 'Te invitamos a conocer la sede personalmente antes de decidir.' },
   ];
   return `
 <section class="section for-families section--white" id="para-familias" aria-labelledby="families-title">
@@ -249,7 +276,7 @@ function buildForFamilies() {
           alt="Espacio común cálido y acogedor de la residencia"
           class="for-families__img"
           loading="lazy"
-          onerror="this.parentElement.innerHTML='&lt;div class=&quot;img-placeholder&quot;&gt;🏡&lt;br&gt;Espacio de la residencia&lt;/div&gt;'"
+          onerror="this.parentElement.innerHTML='&lt;div class=&quot;img-placeholder&quot;&gt;Espacio de la residencia&lt;/div&gt;'"
         >
       </div>
       <div class="for-families__text fade-in">
@@ -286,10 +313,10 @@ function buildServices() {
   const tabsHTML = `
     <div class="services__tabs" role="tablist" aria-label="Tipo de servicios">
       <button class="services__tab is-active" role="tab" aria-selected="true" aria-controls="panel-incluidos" id="tab-incluidos">
-        ✅ Incluidos regularmente
+        ${ICO.check} Incluidos regularmente
       </button>
       <button class="services__tab" role="tab" aria-selected="false" aria-controls="panel-coordinados" id="tab-coordinados">
-        📋 Según necesidad o coordinación
+        ${ICO.ficha} Según necesidad o coordinación
       </button>
     </div>`;
 
@@ -298,7 +325,7 @@ function buildServices() {
       <div class="services__grid">
         ${SITE.serviciosIncluidos.map(s => `
           <div class="service-card fade-in">
-            <div class="service-card__icon" aria-hidden="true">${s.icono}</div>
+            <div class="service-card__icon" aria-hidden="true">${ICO[s.icono] || ''}</div>
             <h3 class="service-card__title">${s.titulo}</h3>
             <p class="service-card__text">${s.descripcion}</p>
           </div>`).join('')}
@@ -310,7 +337,7 @@ function buildServices() {
       <div class="services__coord-grid">
         ${SITE.serviciosCoordinados.map(s => `
           <div class="service-card fade-in">
-            <div class="service-card__icon" aria-hidden="true">${s.icono}</div>
+            <div class="service-card__icon" aria-hidden="true">${ICO[s.icono] || ''}</div>
             <h3 class="service-card__title">${s.titulo}</h3>
             <p class="service-card__text">${s.descripcion}</p>
           </div>`).join('')}
@@ -356,7 +383,7 @@ function buildDailyLife() {
     <div class="daily-life__grid">
       ${SITE.vidaDiaria.map(item => `
         <div class="daily-card fade-in">
-          <span class="daily-card__icon" aria-hidden="true">${item.icono}</span>
+          <span class="daily-card__icon" aria-hidden="true">${ICO[item.icono] || ''}</span>
           <p class="daily-card__text">${item.texto}</p>
         </div>`).join('')}
     </div>
@@ -410,14 +437,14 @@ function buildGallery() {
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
           >
           <div class="gallery__placeholder" style="display:none" aria-hidden="true">
-            <span class="gallery__placeholder-icon">🏡</span>
+            <span class="gallery__placeholder-icon">${ICO.casa}</span>
             <span>${item.caption}</span>
           </div>
           <div class="gallery__caption" aria-hidden="true">${item.caption}</div>
         </div>`).join('')}
     </div>
-    <p style="text-align:center;margin-top:28px;font-size:0.85rem;color:var(--color-text-secondary);">
-      📸 Las fotografías corresponden a los espacios reales de la residencia.
+    <p class="gallery__nota">
+      ${ICO.camara} Las fotografías corresponden a los espacios reales de la residencia.
     </p>
   </div>
 </section>`;
@@ -437,7 +464,7 @@ function buildVisitas() {
         <ul class="visitas__puntos" role="list">
           ${v.puntos.map(p => `
             <li class="visitas__punto">
-              <span class="visitas__punto-icono" aria-hidden="true">${p.icono}</span>
+              <span class="visitas__punto-icono" aria-hidden="true">${ICO[p.icono] || ''}</span>
               ${p.texto}
             </li>`).join('')}
         </ul>
@@ -481,11 +508,11 @@ function buildLocations() {
               alt="Fachada de ${sede.nombre}"
               class="location-card__img"
               loading="lazy"
-              onerror="this.parentElement.innerHTML='&lt;div class=&quot;img-placeholder&quot; style=&quot;height:220px&quot;&gt;🏡&lt;br&gt;${sede.nombre}&lt;/div&gt;'"
+              onerror="this.parentElement.innerHTML='&lt;div class=&quot;img-placeholder&quot; style=&quot;height:220px&quot;&gt;${sede.nombre}&lt;/div&gt;'"
             >
           </div>
           <div class="location-card__body">
-            <div class="location-card__badge">📍 ${sede.id === 'macul' ? 'Macul' : 'Ñuñoa'}</div>
+            <div class="location-card__badge">${ICO.ubicacion} ${sede.id === 'macul' ? 'Macul' : 'Ñuñoa'}</div>
             <h3 class="location-card__name">${sede.nombre}</h3>
             <p class="location-card__address">${sede.direccion}</p>
             <p class="location-card__region">${sede.region}</p>
@@ -650,7 +677,7 @@ function buildContact() {
             <span class="contact__direct-icon contact__direct-icon--wa" aria-hidden="true">${ICONS.whatsapp}</span>
             <div>
               <strong>WhatsApp</strong><br>
-              <span style="font-size:0.85rem;color:var(--color-text-secondary)">${SITE.telefono}</span>
+              <span class="contact__direct-dato">${SITE.telefono}</span>
             </div>
           </a>
           <a 
@@ -662,7 +689,7 @@ function buildContact() {
             <span class="contact__direct-icon contact__direct-icon--phone" aria-hidden="true">${ICONS.phone}</span>
             <div>
               <strong>Llamar</strong><br>
-              <span style="font-size:0.85rem;color:var(--color-text-secondary)">${SITE.telefono}</span>
+              <span class="contact__direct-dato">${SITE.telefono}</span>
             </div>
           </a>
           <a
@@ -676,7 +703,7 @@ function buildContact() {
             <span class="contact__direct-icon contact__direct-icon--ig" aria-hidden="true">${ICONS.instagram}</span>
             <div>
               <strong>Instagram</strong><br>
-              <span style="font-size:0.85rem;color:var(--color-text-secondary)">${SITE.instagram}</span>
+              <span class="contact__direct-dato">${SITE.instagram}</span>
             </div>
           </a>
           <a
@@ -690,7 +717,7 @@ function buildContact() {
             <span class="contact__direct-icon contact__direct-icon--fb" aria-hidden="true">${ICONS.facebook}</span>
             <div>
               <strong>Facebook</strong><br>
-              <span style="font-size:0.85rem;color:var(--color-text-secondary)">${SITE.facebook}</span>
+              <span class="contact__direct-dato">${SITE.facebook}</span>
             </div>
           </a>
         </div>
@@ -797,7 +824,6 @@ function buildFinalCTA() {
       </div>
     </div>
   </div>
-  <div class="final-cta__leaf" style="bottom:-60px;right:-40px" aria-hidden="true">🌿</div>
 </section>`;
 }
 
