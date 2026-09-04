@@ -3,11 +3,24 @@
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
 
-/images/*
-  Cache-Control: public, max-age=31536000, immutable
+# El HTML nunca se cachea: es quien lleva las huellas ?v= de los assets.
+# Así un navegador con versión vieja se recupera solo en la siguiente visita.
+/
+  Cache-Control: no-store
+/index.html
+  Cache-Control: no-store
+/privacidad
+  Cache-Control: no-store
+/privacidad.html
+  Cache-Control: no-store
+/404.html
+  Cache-Control: no-store
 
-/styles/*
-  Cache-Control: public, max-age=86400
-
+# Estos sí pueden cachearse largo: el HTML los pide con ?v=<huella>,
+# y esa URL cambia cada vez que cambia el contenido.
 /bundle.js
   Cache-Control: public, max-age=86400
+/styles/*
+  Cache-Control: public, max-age=86400
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
