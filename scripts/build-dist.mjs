@@ -63,8 +63,16 @@ if (faltantes.length) {
 // deploy haya subido una nueva. Se agrega a cada referencia un ?v=
 // derivado del contenido: al cambiar el archivo cambia la URL, y el
 // navegador la vuelve a pedir solo.
-const HTML = ['index.html', '404.html', 'privacidad.html'];
-const ASSETS = ['bundle.js', 'styles/globals.css', 'styles/components.css'];
+// El manifest también referencia el favicon, así que se reescribe igual
+const HTML = ['index.html', '404.html', 'privacidad.html', 'manifest.webmanifest'];
+// El favicon entra acá porque /images/* se sirve con caché de un año:
+// sin huella, el navegador se queda con el icono viejo para siempre.
+const ASSETS = [
+  'bundle.js',
+  'styles/globals.css',
+  'styles/components.css',
+  'images/favicon.svg',
+];
 
 const huellas = {};
 for (const asset of ASSETS) {
