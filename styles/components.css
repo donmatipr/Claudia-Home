@@ -83,6 +83,8 @@
 .header__logo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-height: 44px;
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -139,8 +141,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  /* 44px es el mínimo táctil; la audiencia toca en celular */
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: var(--color-whatsapp);
   color: white;
@@ -174,8 +177,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   color: var(--color-green-forest);
   background: rgba(169, 197, 173, 0.2);
@@ -453,6 +456,7 @@
   flex-wrap: wrap;
 }
 .services__tab {
+  min-height: 44px;
   padding: 8px 16px;
   border-radius: var(--radius-pill);
   font-size: var(--text-base);
@@ -1062,8 +1066,8 @@
 }
 .contact__direct-icon--wa { background: rgba(37, 211, 102, 0.15); color: var(--color-whatsapp-dark); }
 .contact__direct-icon--phone { background: rgba(37, 74, 54, 0.1); }
-.contact__direct-icon--ig { background: rgba(201, 137, 107, 0.15); color: #B14A6E; }
-.contact__direct-icon--fb { background: rgba(24, 119, 242, 0.12); color: #1877F2; }
+.contact__direct-icon--ig { background: rgba(201, 137, 107, 0.18); color: #A8623F; }
+.contact__direct-icon--fb { background: rgba(169, 197, 173, 0.28); color: var(--color-green-forest); }
 
 /* Formulario */
 .contact-form {
@@ -1143,8 +1147,8 @@
   margin-bottom: 24px;
 }
 .form-check input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
   margin-top: 2px;
   accent-color: var(--color-green-forest);
@@ -1235,8 +1239,8 @@
   gap: 8px;
 }
 .footer__social-link {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: rgba(255,255,255,0.08);
   display: flex;
@@ -1269,6 +1273,9 @@
 }
 .footer__list li a,
 .footer__list li span {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
   font-size: var(--text-sm);
   color: rgba(255,255,255,0.7);
   text-decoration: none;
@@ -1303,6 +1310,9 @@
   gap: 16px;
 }
 .footer__legal a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: var(--text-sm);
   color: rgba(255,255,255,0.45);
   text-decoration: none;
