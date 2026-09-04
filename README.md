@@ -49,97 +49,166 @@ Luego abre **http://localhost:8000** en tu navegador.
 
 ```
 casa-de-reposo/
-├── index.html               ← Página principal
+├── index.html               ← Página principal (metadatos y SEO)
 ├── privacidad.html          ← Política de privacidad
-├── bundle.js                ← Script empaquetado para producción (NO editar)
-├── main.js                  ← Código fuente de la lógica de la página
-├── robots.txt               ← Para buscadores
-├── sitemap.xml              ← Para buscadores
-├── manifest.webmanifest     ← Para móviles (instalación como app)
-├── package.json             ← Configuración npm (scripts de desarrollo)
+├── 404.html                 ← Página de error
+├── main.js                  ← Código que arma la página  ⭐ algunos textos
+├── bundle.js                ← Compilado de main.js (NO editar a mano)
 ├── data/
-│   └── site.js              ← ⭐ EDITA AQUÍ textos, datos y configuración
+│   └── site.js              ← ⭐ La mayoría de los textos y datos
 ├── styles/
-│   ├── globals.css          ← Variables de color y tipografía
+│   ├── globals.css          ← Colores, tipografía, botones
 │   └── components.css       ← Estilos de cada sección
 ├── images/                  ← Fotografías del sitio
-│   ├── hero-residencia.webp
-│   ├── sede-macul.webp
-│   ├── sede-nunoa.webp
-│   └── ...
+├── scripts/
+│   └── build-dist.mjs       ← Arma dist/ para publicar
+├── _headers                 ← Cabeceras de seguridad y caché
+├── wrangler.jsonc           ← Configuración de Cloudflare
+├── robots.txt / sitemap.xml ← Para buscadores
+├── manifest.webmanifest     ← Instalación como app en móvil
 ├── README.md                ← Esta guía
 ├── FOTOS-A-REEMPLAZAR.md    ← Instrucciones para las fotos
-└── REVISION-ANTES-DE-PUBLICAR.md ← Lista de verificación
+└── REVISION-ANTES-DE-PUBLICAR.md ← Lista de verificación interna
 ```
 
 ---
 
-## ✏️ Cómo modificar textos
+## ✏️ Cómo editar los textos
 
-### Cambiar textos, teléfono o direcciones
-
-Abre el archivo **`data/site.js`** con cualquier editor de texto (Bloc de notas, VS Code, etc.).
-
-Ahí encontrarás todas las variables organizadas:
-
-```javascript
-// Cambiar el teléfono:
-telefono: '+56 9 9901 0921',
-telefonoHref: 'tel:+56999010921',
-whatsappNumero: '56999010921',
-
-// Cambiar la dirección de Macul:
-sedes: [
-  { direccion: 'Manuel Sánchez 3234, Macul', ... },
-  { direccion: 'Montenegro 688, Ñuñoa', ... },
-]
-```
-
-Después de editar `data/site.js`, ejecuta el build para aplicar los cambios:
+### El flujo, siempre el mismo
 
 ```bash
-npm run build
+# 1. Edita el archivo que corresponda (ver el mapa de abajo)
+# 2. Mira el resultado en tu computador:
+npm run dev          # abre http://localhost:3000
+
+# 3. Cuando esté bien, publica:
+npm run deploy
 ```
 
-> ⚠️ **Importante:** El archivo `bundle.js` es el que usa `index.html`. Siempre ejecuta `npm run build` después de modificar `main.js` o `data/site.js`.
+> ⚠️ Los cambios en **`data/site.js` y `main.js` no se ven hasta compilar**.
+> `npm run dev` no compila solo. Si editaste alguno de esos dos, corre
+> `npm run build` y recarga el navegador.
+> Los cambios en **CSS sí se ven al instante** con solo recargar.
 
-### Cambiar colores
+---
 
-Abre **`styles/globals.css`** y modifica las variables al inicio del archivo:
+### 🗺️ Mapa: dónde está cada texto
 
-```css
-:root {
-  --color-green-forest: #254A36;  /* Color principal de botones */
-  --color-green-pastel: #A9C5AD;  /* Verde pastel decorativo */
-  --color-ivory: #FAF8F1;         /* Fondo principal */
-  --color-terracotta: #C9896B;    /* Acentos y dividers */
-}
-```
+Hay **dos** archivos con texto. Esta es la división:
 
-Los cambios de CSS se aplican de inmediato sin necesidad de build.
+#### `data/site.js` — datos que se repiten en varios lugares
 
-### Agregar o cambiar servicios
+| Qué quieres cambiar | Busca este bloque |
+|---|---|
+| Teléfono y WhatsApp | `telefono`, `telefonoHref`, `whatsappNumero` |
+| Instagram y Facebook | `instagramUrl`, `facebookUrl` |
+| Direcciones de las sedes | `sedes` |
+| Servicios incluidos | `serviciosIncluidos` |
+| Servicios coordinados | `serviciosCoordinados` |
+| Lista de "vida diaria" | `vidaDiaria` |
+| **Sección de visitas 24/7** | `visitas` |
+| Los 3 pasos del proceso | `pasos` |
+| Preguntas frecuentes | `faq` |
+| Pies de foto de la galería | `galeria` |
+| Testimonios | `testimonios` |
 
-En `data/site.js` encontrarás `serviciosIncluidos` y `serviciosCoordinados`. Agrega o modifica los objetos:
+#### `main.js` — textos que aparecen una sola vez
+
+Estos están escritos directamente en el código, dentro de la función que
+arma cada sección. Búscalos con `Ctrl+F` por el texto actual.
+
+| Qué quieres cambiar | Función en `main.js` |
+|---|---|
+| Titular grande del inicio | `buildHero()` |
+| Texto bajo el titular y botones | `buildHero()` |
+| Los 4 datos de la franja verde | `buildTrustBelt()` |
+| "Sabemos que elegir una residencia…" | `buildForFamilies()` |
+| Títulos de la sección de cuidados | `buildServices()` |
+| Títulos de "vida en la residencia" | `buildDailyLife()` |
+| Frase grande "Aquí nadie pasa el día solo" | `buildTagline()` |
+| Títulos de la galería | `buildGallery()` |
+| Títulos de sedes y proceso | `buildLocations()`, `buildProcess()` |
+| Formulario de contacto | `buildContact()` |
+| Bloque final "Conocer el lugar…" | `buildFinalCTA()` |
+| Pie de página y descargo legal | `buildFooter()` |
+
+#### `index.html` — lo que ve Google y WhatsApp
+
+El texto que aparece en los resultados de búsqueda y al compartir el enlace:
+`<title>`, `<meta name="description">` y las etiquetas `og:`.
+
+---
+
+### Ejemplos concretos
+
+**Cambiar el teléfono** → `data/site.js`, arriba del todo. Ojo, son tres campos:
 
 ```javascript
-{
-  icono: '🏠',
-  titulo: 'Nombre del servicio',
-  descripcion: 'Descripción del servicio.'
-}
+telefono: '+56 9 9901 0921',        // el que se muestra
+telefonoHref: 'tel:+56999010921',   // el que se marca al tocar
+whatsappNumero: '56999010921',      // sin + ni espacios
 ```
 
-### Agregar preguntas frecuentes
+**Cambiar la sección de visitas 24/7** → `data/site.js`, bloque `visitas`:
 
-En `data/site.js`, en la sección `faq`, agrega:
+```javascript
+visitas: {
+  etiqueta: 'Puertas abiertas',
+  destacado: '24/7',                 // el número grande
+  titulo: 'Puedes visitar a tu familiar a cualquier hora…',
+  descripcion: 'No trabajamos con horarios…',
+  cierre: 'Lo hacemos por una razón simple…',
+  puntos: [
+    { icono: '🌅', texto: 'Mañana, tarde o noche' },
+    // agrega o quita puntos libremente
+  ],
+  ctaTexto: 'Consultar por una visita',
+},
+```
+
+**Cambiar el titular del inicio** → `main.js`, función `buildHero()`.
+Los `<br>` fuerzan los saltos de línea en computador; en celular se ignoran:
+
+```html
+<h1 id="hero-title" class="hero__title">
+  Cuidado las 24 horas<br>
+  para tu madre o tu padre,<br>
+  <em>donde se sienta en casa</em>
+</h1>
+```
+
+**Agregar una pregunta frecuente** → `data/site.js`, bloque `faq`:
 
 ```javascript
 {
   pregunta: '¿Tu nueva pregunta?',
-  respuesta: 'La respuesta que quieres dar.'
+  respuesta: 'La respuesta que quieres dar.',
+},
+```
+
+**Cambiar colores** → `styles/globals.css`, al inicio:
+
+```css
+:root {
+  --color-green-forest: #254A36;  /* Botones y fondos oscuros */
+  --color-green-pastel: #A9C5AD;  /* Verde claro decorativo */
+  --color-ivory:        #FAF8F1;  /* Fondo principal */
+  --color-terracotta:   #C9896B;  /* Acentos */
 }
 ```
+
+---
+
+### Reglas para no romper nada
+
+1. **No edites `bundle.js`.** Se regenera solo y perderías los cambios.
+2. **Respeta comillas y comas.** En `data/site.js` cada línea termina en coma.
+   Si borras una comilla, la página queda en blanco.
+3. **Si la página queda en blanco**, abre la consola del navegador con `F12`,
+   pestaña *Console*. El error te dice la línea exacta.
+4. **Los acentos y la ñ funcionan** sin problema. Guarda siempre en UTF-8.
+5. **Prueba antes de publicar.** `npm run dev` primero, `npm run deploy` después.
 
 ---
 
@@ -180,47 +249,21 @@ Lee el archivo **`FOTOS-A-REEMPLAZAR.md`** para instrucciones detalladas.
 
 ---
 
-## 🔧 Cambiar el número de teléfono y las direcciones
+## 🏗️ Los comandos del proyecto
 
-Todo está en **`data/site.js`**:
+| Comando | Qué hace |
+|---|---|
+| `npm run dev` | Levanta el sitio en http://localhost:3000 para verlo |
+| `npm run build` | Convierte `main.js` + `data/site.js` en `bundle.js` |
+| `npm run build:site` | Hace el build y arma `dist/` con lo que se publica |
+| `npm run deploy` | Build + dist + sube a Cloudflare. **Este es el que publica.** |
 
-```javascript
-// Teléfono (mantener el mismo formato en ambos lugares):
-telefono: '+56 9 9901 0921',        // Texto visible en la página
-telefonoHref: 'tel:+56999010921',   // Enlace para llamadas
-whatsappNumero: '56999010921',      // Número para WhatsApp (sin +)
-
-// Direcciones:
-sedes: [
-  {
-    direccion: 'Manuel Sánchez 3234, Macul',
-    mapsUrl: 'https://maps.google.com/maps?q=...',  // URL de Google Maps
-  },
-  {
-    direccion: 'Montenegro 688, Ñuñoa',
-    mapsUrl: 'https://maps.google.com/maps?q=...',
-  },
-],
-```
-
-Después de cambiar, ejecuta `npm run build`.
-
----
-
-## 🏗️ Compilar el proyecto (build)
-
-El build convierte `main.js` + `data/site.js` en el archivo `bundle.js` que usa la página:
+En el día a día solo necesitas dos:
 
 ```bash
-npm run build
+npm run dev      # mientras editas
+npm run deploy   # cuando quieras publicar
 ```
-
-Resultado exitoso:
-```
-  bundle.js  XX.X kb
-```
-
-> El build es necesario cada vez que modifiques `main.js` o `data/site.js`.
 
 ---
 
