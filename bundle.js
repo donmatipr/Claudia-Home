@@ -1,23 +1,24 @@
-var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un hogar cercano, cuidado y acompa\xF1ado todos los d\xEDas",descripcionBreve:"Acompa\xF1amos a cada residente con cuidado permanente, alimentaci\xF3n diaria, actividades terap\xE9uticas y un ambiente familiar en nuestras sedes de Macul y \xD1u\xF1oa.",telefono:"+56 9 9901 0921",telefonoHref:"tel:+56999010921",whatsappNumero:"56999010921",instagram:"@casadereposo.cl",instagramUrl:"https://www.instagram.com/casadereposo.cl/",facebook:"Casa de Reposo Claudia Lastra",facebookUrl:"https://www.facebook.com/profile.php?id=61578537031370",sedes:[{id:"macul",nombre:"Sede Macul",direccion:"Manuel S\xE1nchez 3234, Macul",region:"Regi\xF3n Metropolitana, Santiago",imagen:"images/sede-macul.webp",mapsUrl:"https://maps.google.com/maps?q=Manuel+S%C3%A1nchez+3234+Macul+Santiago+Chile",whatsappMensaje:"Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa consultar informaci\xF3n sobre la *Sede Macul*. \xBFPodr\xEDan orientarme?"},{id:"nunoa",nombre:"Sede \xD1u\xF1oa",direccion:"Montenegro 688, \xD1u\xF1oa",region:"Regi\xF3n Metropolitana, Santiago",imagen:"images/sede-nunoa.webp",mapsUrl:"https://maps.google.com/maps?q=Montenegro+688+%C3%91u%C3%B1oa+Santiago+Chile",whatsappMensaje:"Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa consultar informaci\xF3n sobre la *Sede \xD1u\xF1oa*. \xBFPodr\xEDan orientarme?"}],serviciosIncluidos:[{icono:"\u{1F3E0}",titulo:"Cuidado permanente",descripcion:"Cuidadoras presentes las 24 horas del d\xEDa, todos los d\xEDas del a\xF1o, para acompa\xF1ar y apoyar a cada residente en su rutina diaria."},{icono:"\u{1F37D}\uFE0F",titulo:"Alimentaci\xF3n diaria",descripcion:"Cuatro comidas al d\xEDa preparadas con cari\xF1o: desayuno, almuerzo, once y cena, con orientaci\xF3n de nutricionista una vez al mes."},{icono:"\u{1F938}",titulo:"Kinesiolog\xEDa grupal",descripcion:"Cuatro horas semanales de kinesiolog\xEDa en grupo para mantener el movimiento, la movilidad y el bienestar f\xEDsico de los residentes."},{icono:"\u{1F3A8}",titulo:"Terapia ocupacional",descripcion:"Cuatro horas semanales de actividades terap\xE9uticas grupales que estimulan la creatividad, la concentraci\xF3n y la participaci\xF3n activa."},{icono:"\u{1F957}",titulo:"Orientaci\xF3n nutricional",descripcion:"Nutricionista que visita la residencia una vez al mes para orientar la alimentaci\xF3n y apoyar el bienestar de los residentes."}],serviciosCoordinados:[{icono:"\u{1FA7A}",titulo:"Apoyo cl\xEDnico coordinado",descripcion:"Enfermera disponible ante situaciones cl\xEDnicas que requieran apoyo. El equipo coordina la atenci\xF3n de manera oportuna."},{icono:"\u2695\uFE0F",titulo:"TENS cuando corresponda",descripcion:"Apoyo de TENS disponible seg\xFAn requerimiento del residente y coordinaci\xF3n correspondiente."},{icono:"\u{1F3E5}",titulo:"Tratamientos ambulatorios",descripcion:"Los tratamientos especiales de car\xE1cter ambulatorio pueden coordinarse y tienen costo adicional para la familia."},{icono:"\u{1F4CB}",titulo:"Consultorio o CESFAM",descripcion:"Se sugiere mantener o realizar la inscripci\xF3n en el consultorio o CESFAM que corresponda al domicilio de la residencia."}],vidaDiaria:[{icono:"\u{1F37D}\uFE0F",texto:"Alimentaci\xF3n nutritiva y preparada con cari\xF1o"},{icono:"\u{1F4AC}",texto:"Conversaci\xF3n y compa\xF1\xEDa cada d\xEDa"},{icono:"\u{1F938}",texto:"Movimiento y actividad f\xEDsica adaptada"},{icono:"\u{1F3AD}",texto:"Actividades grupales y estimulaci\xF3n"},{icono:"\u{1F634}",texto:"Descanso tranquilo y acompa\xF1ado"},{icono:"\u{1F468}\u200D\u{1F469}\u200D\u{1F467}",texto:"Visitas familiares bienvenidas"}],pasos:[{numero:"1",titulo:"Escr\xEDbenos o solicita una visita",descripcion:"Cont\xE1ctanos por WhatsApp o completa el formulario de contacto. Nos pondremos en contacto contigo a la brevedad."},{numero:"2",titulo:"Conversemos sobre tu familiar",descripcion:"Evaluamos juntos las necesidades de apoyo, la sede de inter\xE9s y cualquier pregunta que tengas sobre la vida en la residencia."},{numero:"3",titulo:"Conoce la sede y revisemos disponibilidad",descripcion:"Te invitamos a visitar el lugar para que puedas ver, sentir y preguntar todo lo que necesites antes de tomar una decisi\xF3n."}],testimonios:[],faq:[{pregunta:"\xBFC\xF3mo puedo agendar una visita?",respuesta:"Puedes agendar una visita escribi\xE9ndonos por WhatsApp al +56 9 9901 0921 o completando el formulario de contacto en esta p\xE1gina. Te responderemos a la brevedad para coordinar el d\xEDa y la hora que mejor te acomode."},{pregunta:"\xBFEn qu\xE9 comunas est\xE1n ubicados?",respuesta:"Contamos con dos sedes en Santiago: una en Macul (Manuel S\xE1nchez 3234) y otra en \xD1u\xF1oa (Montenegro 688). Puedes elegir la que sea m\xE1s conveniente para tu familia."},{pregunta:"\xBFQu\xE9 servicios est\xE1n incluidos regularmente?",respuesta:"Los servicios incluidos regularmente son: cuidadoras presentes las 24 horas, cuatro comidas diarias, kinesiolog\xEDa grupal cuatro horas a la semana, terapia ocupacional cuatro horas a la semana, y visita de nutricionista una vez al mes. Los apoyos y requerimientos particulares se revisan con cada familia antes del ingreso."},{pregunta:"\xBFC\xF3mo se consulta la disponibilidad?",respuesta:"Los cupos pueden variar seg\xFAn la sede y las necesidades de apoyo de cada persona. Escr\xEDbenos por WhatsApp o completa el formulario para recibir informaci\xF3n actualizada y personalizada."},{pregunta:"\xBFLos tratamientos cl\xEDnicos especiales est\xE1n incluidos?",respuesta:"Los tratamientos especiales de car\xE1cter ambulatorio pueden coordinarse, pero tienen costo adicional para la familia. La enfermera y el TENS est\xE1n disponibles seg\xFAn necesidad y coordinaci\xF3n. Te explicaremos en detalle al momento de la consulta."},{pregunta:"\xBFSe puede elegir entre Macul y \xD1u\xF1oa?",respuesta:"S\xED, puedes elegir la sede que mejor se adapte a tu ubicaci\xF3n o preferencias. Ambas sedes comparten los mismos est\xE1ndares de cuidado y acompa\xF1amiento. Cons\xFAltanos si tienes dudas sobre cu\xE1l podr\xEDa ser la mejor opci\xF3n."},{pregunta:"\xBFSe recomienda la inscripci\xF3n en un consultorio o CESFAM?",respuesta:"S\xED, se sugiere mantener o realizar la inscripci\xF3n en el consultorio o CESFAM que corresponda al domicilio de la residencia. El equipo puede orientarte en este proceso."},{pregunta:"\xBFC\xF3mo puedo solicitar informaci\xF3n sobre valores?",respuesta:"Los valores y cupos pueden variar seg\xFAn la sede y las necesidades de apoyo de cada persona. Escr\xEDbenos por WhatsApp al +56 9 9901 0921 para recibir informaci\xF3n actualizada."}],galeria:[{src:"images/hero-residencia.webp",alt:"Interior de Casa de Reposo Claudia Lastra",caption:"Un ambiente c\xE1lido y hogare\xF1o"},{src:"images/sede-macul.webp",alt:"Fachada Sede Macul",caption:"Sede Macul \u2014 Manuel S\xE1nchez 3234"},{src:"images/sede-nunoa.webp",alt:"Fachada Sede \xD1u\xF1oa",caption:"Sede \xD1u\xF1oa \u2014 Montenegro 688"},{src:"images/espacio-comun.webp",alt:"Espacios comunes de la residencia",caption:"Espacios comunes acogedores"},{src:"images/habitacion.webp",alt:"Habitaci\xF3n de la residencia",caption:"Habitaciones confortables"},{src:"images/alimentacion.webp",alt:"Alimentaci\xF3n en la residencia",caption:"Cuatro comidas diarias con cari\xF1o"},{src:"images/actividad-grupal.webp",alt:"Actividad grupal con residentes",caption:"Terapia ocupacional y actividades"},{src:"images/equipo-cuidados.webp",alt:"Equipo de cuidadoras",caption:"Nuestro equipo de cuidados"}],seo:{titleTag:"Casa de Reposo Claudia Lastra \u2014 Residencia para personas mayores en Macul y \xD1u\xF1oa",metaDescription:"Residencia para personas mayores en Macul y \xD1u\xF1oa, Santiago. Cuidadoras las 24 horas, 4 comidas diarias y 8 horas semanales de kinesiolog\xEDa y terapia ocupacional. Agenda una visita sin costo.",canonicalUrl:"https://casadereposo.cl",ogImage:"images/hero-residencia.webp"},analytics:{gaId:"",plausibleDomain:""}};function _(e,a={}){try{typeof gtag=="function"&&gtag("event",e,a)}catch{}}function l(e){return`https://wa.me/${s.whatsappNumero}?text=${encodeURIComponent(e)}`}var p="Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa recibir informaci\xF3n y coordinar una visita.",y="Hola, vengo desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa *agendar una visita* para conocer la residencia. \xBFCu\xE1ndo ser\xEDa posible?",o={whatsapp:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.3l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>',calendar:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',map:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',phone:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.9a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6.1 6.1l1.06-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',instagram:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>',facebook:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true" focusable="false"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.92 3.77-3.92 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.9h2.78l-.45 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>'};function q(){let e=document.getElementById("app");e&&(e.innerHTML=`
+var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un hogar cercano, cuidado y acompa\xF1ado todos los d\xEDas",descripcionBreve:"Acompa\xF1amos a cada residente con cuidado permanente, alimentaci\xF3n diaria, actividades terap\xE9uticas y un ambiente familiar en nuestras sedes de Macul y \xD1u\xF1oa.",telefono:"+56 9 9901 0921",telefonoHref:"tel:+56999010921",whatsappNumero:"56999010921",instagram:"@casadereposo.cl",instagramUrl:"https://www.instagram.com/casadereposo.cl/",facebook:"Casa de Reposo Claudia Lastra",facebookUrl:"https://www.facebook.com/profile.php?id=61578537031370",sedes:[{id:"macul",nombre:"Sede Macul",direccion:"Manuel S\xE1nchez 3234, Macul",region:"Regi\xF3n Metropolitana, Santiago",imagen:"images/sede-macul.webp",mapsUrl:"https://maps.google.com/maps?q=Manuel+S%C3%A1nchez+3234+Macul+Santiago+Chile",whatsappMensaje:"Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa consultar informaci\xF3n sobre la *Sede Macul*. \xBFPodr\xEDan orientarme?"},{id:"nunoa",nombre:"Sede \xD1u\xF1oa",direccion:"Montenegro 688, \xD1u\xF1oa",region:"Regi\xF3n Metropolitana, Santiago",imagen:"images/sede-nunoa.webp",mapsUrl:"https://maps.google.com/maps?q=Montenegro+688+%C3%91u%C3%B1oa+Santiago+Chile",whatsappMensaje:"Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa consultar informaci\xF3n sobre la *Sede \xD1u\xF1oa*. \xBFPodr\xEDan orientarme?"}],serviciosIncluidos:[{icono:"\u{1F3E0}",titulo:"Cuidado permanente",descripcion:"Cuidadoras presentes las 24 horas del d\xEDa, todos los d\xEDas del a\xF1o, para acompa\xF1ar y apoyar a cada residente en su rutina diaria."},{icono:"\u{1F37D}\uFE0F",titulo:"Alimentaci\xF3n diaria",descripcion:"Cuatro comidas al d\xEDa preparadas con cari\xF1o: desayuno, almuerzo, once y cena, con orientaci\xF3n de nutricionista una vez al mes."},{icono:"\u{1F938}",titulo:"Kinesiolog\xEDa grupal",descripcion:"Cuatro horas semanales de kinesiolog\xEDa en grupo para mantener el movimiento, la movilidad y el bienestar f\xEDsico de los residentes."},{icono:"\u{1F3A8}",titulo:"Terapia ocupacional",descripcion:"Cuatro horas semanales de actividades terap\xE9uticas grupales que estimulan la creatividad, la concentraci\xF3n y la participaci\xF3n activa."},{icono:"\u{1F957}",titulo:"Orientaci\xF3n nutricional",descripcion:"Nutricionista que visita la residencia una vez al mes para orientar la alimentaci\xF3n y apoyar el bienestar de los residentes."}],serviciosCoordinados:[{icono:"\u{1FA7A}",titulo:"Apoyo cl\xEDnico coordinado",descripcion:"Enfermera disponible ante situaciones cl\xEDnicas que requieran apoyo. El equipo coordina la atenci\xF3n de manera oportuna."},{icono:"\u2695\uFE0F",titulo:"TENS cuando corresponda",descripcion:"Apoyo de TENS disponible seg\xFAn requerimiento del residente y coordinaci\xF3n correspondiente."},{icono:"\u{1F3E5}",titulo:"Tratamientos ambulatorios",descripcion:"Los tratamientos especiales de car\xE1cter ambulatorio pueden coordinarse y tienen costo adicional para la familia."},{icono:"\u{1F4CB}",titulo:"Consultorio o CESFAM",descripcion:"Se sugiere mantener o realizar la inscripci\xF3n en el consultorio o CESFAM que corresponda al domicilio de la residencia."}],vidaDiaria:[{icono:"\u{1F37D}\uFE0F",texto:"Alimentaci\xF3n nutritiva y preparada con cari\xF1o"},{icono:"\u{1F4AC}",texto:"Conversaci\xF3n y compa\xF1\xEDa cada d\xEDa"},{icono:"\u{1F938}",texto:"Movimiento y actividad f\xEDsica adaptada"},{icono:"\u{1F3AD}",texto:"Actividades grupales y estimulaci\xF3n"},{icono:"\u{1F634}",texto:"Descanso tranquilo y acompa\xF1ado"},{icono:"\u{1F468}\u200D\u{1F469}\u200D\u{1F467}",texto:"Visitas de la familia a cualquier hora, sin horarios restringidos"}],visitas:{etiqueta:"Puertas abiertas",destacado:"24/7",titulo:"Puedes visitar a tu familiar a cualquier hora, todos los d\xEDas del a\xF1o",descripcion:"No trabajamos con horarios de visita restringidos. Puedes venir en la ma\xF1ana, por la tarde, de noche o el fin de semana, sin pedir permiso ni ajustarte a una franja horaria.",cierre:"Lo hacemos por una raz\xF3n simple: la presencia de la familia forma parte del cuidado. Una residencia que limita las visitas suele tener algo que ordenar antes de recibirte. Aqu\xED puedes llegar sin aviso y ver exactamente c\xF3mo vive tu familiar cualquier d\xEDa del a\xF1o.",puntos:[{icono:"\u{1F305}",texto:"Ma\xF1ana, tarde o noche"},{icono:"\u{1F4C5}",texto:"Todos los d\xEDas, incluidos festivos"},{icono:"\u{1F513}",texto:"Sin aviso previo ni autorizaci\xF3n"}],ctaTexto:"Consultar por una visita",whatsappMensaje:"Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Quisiera consultar sobre las *visitas a los residentes*. \xBFPodr\xEDan orientarme?"},pasos:[{numero:"1",titulo:"Escr\xEDbenos o solicita una visita",descripcion:"Cont\xE1ctanos por WhatsApp o completa el formulario de contacto. Nos pondremos en contacto contigo a la brevedad."},{numero:"2",titulo:"Conversemos sobre tu familiar",descripcion:"Evaluamos juntos las necesidades de apoyo, la sede de inter\xE9s y cualquier pregunta que tengas sobre la vida en la residencia."},{numero:"3",titulo:"Conoce la sede y revisemos disponibilidad",descripcion:"Te invitamos a visitar el lugar para que puedas ver, sentir y preguntar todo lo que necesites antes de tomar una decisi\xF3n."}],testimonios:[],faq:[{pregunta:"\xBFC\xF3mo puedo agendar una visita?",respuesta:"Puedes agendar una visita escribi\xE9ndonos por WhatsApp al +56 9 9901 0921 o completando el formulario de contacto en esta p\xE1gina. Te responderemos a la brevedad para coordinar el d\xEDa y la hora que mejor te acomode."},{pregunta:"\xBFHay horarios de visita para las familias?",respuesta:"No. Puedes visitar a tu familiar a cualquier hora, todos los d\xEDas del a\xF1o, incluidos festivos. No necesitas avisar con anticipaci\xF3n ni pedir autorizaci\xF3n. Creemos que la presencia de la familia es parte del cuidado, no una interrupci\xF3n, y que poder llegar sin aviso es la mejor garant\xEDa de transparencia que podemos ofrecerte."},{pregunta:"\xBFEn qu\xE9 comunas est\xE1n ubicados?",respuesta:"Contamos con dos sedes en Santiago: una en Macul (Manuel S\xE1nchez 3234) y otra en \xD1u\xF1oa (Montenegro 688). Puedes elegir la que sea m\xE1s conveniente para tu familia."},{pregunta:"\xBFQu\xE9 servicios est\xE1n incluidos regularmente?",respuesta:"Los servicios incluidos regularmente son: cuidadoras presentes las 24 horas, cuatro comidas diarias, kinesiolog\xEDa grupal cuatro horas a la semana, terapia ocupacional cuatro horas a la semana, y visita de nutricionista una vez al mes. Los apoyos y requerimientos particulares se revisan con cada familia antes del ingreso."},{pregunta:"\xBFC\xF3mo se consulta la disponibilidad?",respuesta:"Los cupos pueden variar seg\xFAn la sede y las necesidades de apoyo de cada persona. Escr\xEDbenos por WhatsApp o completa el formulario para recibir informaci\xF3n actualizada y personalizada."},{pregunta:"\xBFLos tratamientos cl\xEDnicos especiales est\xE1n incluidos?",respuesta:"Los tratamientos especiales de car\xE1cter ambulatorio pueden coordinarse, pero tienen costo adicional para la familia. La enfermera y el TENS est\xE1n disponibles seg\xFAn necesidad y coordinaci\xF3n. Te explicaremos en detalle al momento de la consulta."},{pregunta:"\xBFSe puede elegir entre Macul y \xD1u\xF1oa?",respuesta:"S\xED, puedes elegir la sede que mejor se adapte a tu ubicaci\xF3n o preferencias. Ambas sedes comparten los mismos est\xE1ndares de cuidado y acompa\xF1amiento. Cons\xFAltanos si tienes dudas sobre cu\xE1l podr\xEDa ser la mejor opci\xF3n."},{pregunta:"\xBFSe recomienda la inscripci\xF3n en un consultorio o CESFAM?",respuesta:"S\xED, se sugiere mantener o realizar la inscripci\xF3n en el consultorio o CESFAM que corresponda al domicilio de la residencia. El equipo puede orientarte en este proceso."},{pregunta:"\xBFC\xF3mo puedo solicitar informaci\xF3n sobre valores?",respuesta:"Los valores y cupos pueden variar seg\xFAn la sede y las necesidades de apoyo de cada persona. Escr\xEDbenos por WhatsApp al +56 9 9901 0921 para recibir informaci\xF3n actualizada."}],galeria:[{src:"images/hero-residencia.webp",alt:"Interior de Casa de Reposo Claudia Lastra",caption:"Un ambiente c\xE1lido y hogare\xF1o"},{src:"images/sede-macul.webp",alt:"Fachada Sede Macul",caption:"Sede Macul \u2014 Manuel S\xE1nchez 3234"},{src:"images/sede-nunoa.webp",alt:"Fachada Sede \xD1u\xF1oa",caption:"Sede \xD1u\xF1oa \u2014 Montenegro 688"},{src:"images/espacio-comun.webp",alt:"Espacios comunes de la residencia",caption:"Espacios comunes acogedores"},{src:"images/habitacion.webp",alt:"Habitaci\xF3n de la residencia",caption:"Habitaciones confortables"},{src:"images/alimentacion.webp",alt:"Alimentaci\xF3n en la residencia",caption:"Cuatro comidas diarias con cari\xF1o"},{src:"images/actividad-grupal.webp",alt:"Actividad grupal con residentes",caption:"Terapia ocupacional y actividades"},{src:"images/equipo-cuidados.webp",alt:"Equipo de cuidadoras",caption:"Nuestro equipo de cuidados"}],seo:{titleTag:"Casa de Reposo Claudia Lastra \u2014 Residencia para personas mayores en Macul y \xD1u\xF1oa",metaDescription:"Residencia para personas mayores en Macul y \xD1u\xF1oa, Santiago. Cuidadoras las 24 horas, 4 comidas diarias y 8 horas semanales de kinesiolog\xEDa y terapia ocupacional. Agenda una visita sin costo.",canonicalUrl:"https://casadereposo.cl",ogImage:"images/hero-residencia.webp"},analytics:{gaId:"",plausibleDomain:""}};function _(a,e={}){try{typeof gtag=="function"&&gtag("event",a,e)}catch{}}function c(a){return`https://wa.me/${s.whatsappNumero}?text=${encodeURIComponent(a)}`}var p="Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa recibir informaci\xF3n y coordinar una visita.",y="Hola, vengo desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa *agendar una visita* para conocer la residencia. \xBFCu\xE1ndo ser\xEDa posible?",o={whatsapp:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.3l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>',calendar:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',map:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',phone:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.9a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6.1 6.1l1.06-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',instagram:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>',facebook:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true" focusable="false"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.92 3.77-3.92 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.9h2.78l-.45 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>'};function x(){let a=document.getElementById("app");a&&(a.innerHTML=`
     ${S()}
     <main id="main-content">
       ${A()}
       ${L()}
       ${M()}
       ${E()}
-      ${I()}
       ${z()}
-      ${T()}
+      ${I()}
       ${j()}
+      ${T()}
       ${R()}
       ${N()}
-      ${F()}
-      ${U()}
       ${P()}
+      ${U()}
+      ${F()}
+      ${H()}
     </main>
     ${B()}
-    ${H()}
     ${W()}
+    ${D()}
   `)}function S(){return`
 <header class="header" id="header" role="banner">
   <div class="container">
@@ -28,9 +29,9 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </a>
       <nav class="header__nav" id="main-nav" aria-label="Navegaci\xF3n principal">
         <ul class="nav__list" role="list">
-          ${[["#inicio","Inicio"],["#cuidados","Cuidados"],["#vida-diaria","Vida diaria"],["#sedes","Sedes"],["#preguntas","Preguntas"],["#contacto","Contacto"]].map(([a,n])=>`
+          ${[["#inicio","Inicio"],["#cuidados","Cuidados"],["#vida-diaria","Vida diaria"],["#sedes","Sedes"],["#preguntas","Preguntas"],["#contacto","Contacto"]].map(([e,r])=>`
             <li>
-              <a href="${a}" class="nav__link">${n}</a>
+              <a href="${e}" class="nav__link">${r}</a>
             </li>`).join("")}
         </ul>
       </nav>
@@ -52,7 +53,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
           data-track="facebook_click"
         >${o.facebook}</a>
         <a
-          href="${l(p)}"
+          href="${c(p)}"
           class="header__wa-icon"
           target="_blank"
           rel="noopener noreferrer"
@@ -104,7 +105,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </p>
       <div class="hero__actions">
         <a
-          href="${l(p)}"
+          href="${c(p)}"
           class="btn btn-whatsapp btn-lg"
           target="_blank"
           rel="noopener noreferrer"
@@ -131,11 +132,11 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
 <section class="trust-belt" aria-label="Datos destacados de la residencia">
   <div class="container">
     <div class="trust-belt__grid" role="list">
-      ${[{icon:"\u23F0",value:"24 horas",label:"con cuidadoras presentes, todos los d\xEDas del a\xF1o"},{icon:"\u{1F37D}\uFE0F",value:"4 comidas",label:"diarias, con nutricionista una vez al mes"},{icon:"\u{1F938}",value:"8 horas",label:"semanales de kinesiolog\xEDa y terapia ocupacional"},{icon:"\u{1F4CD}",value:"2 sedes",label:"en Macul y \xD1u\xF1oa, Santiago"}].map(a=>`
+      ${[{icon:"\u23F0",value:"24 horas",label:"con cuidadoras presentes, todos los d\xEDas del a\xF1o"},{icon:"\u{1F37D}\uFE0F",value:"4 comidas",label:"diarias, con nutricionista una vez al mes"},{icon:"\u{1F938}",value:"8 horas",label:"semanales de kinesiolog\xEDa y terapia ocupacional"},{icon:"\u{1F4CD}",value:"2 sedes",label:"en Macul y \xD1u\xF1oa, Santiago"}].map(e=>`
         <div class="trust-item" role="listitem">
-          <span class="trust-item__icon" aria-hidden="true">${a.icon}</span>
-          <span class="trust-item__value">${a.value}</span>
-          <span class="trust-item__label">${a.label}</span>
+          <span class="trust-item__icon" aria-hidden="true">${e.icon}</span>
+          <span class="trust-item__value">${e.value}</span>
+          <span class="trust-item__label">${e.label}</span>
         </div>`).join("")}
     </div>
   </div>
@@ -162,14 +163,14 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
           La familia busca seguridad y bienestar. La persona mayor necesita conservar su dignidad, sus v\xEDnculos, sus rutinas y sentir compa\xF1\xEDa. Nosotros entendemos ambas cosas.
         </p>
         <div class="for-families__features">
-          ${[{icon:"\u{1F442}",text:"Te escuchamos con atenci\xF3n, sin presionarte ni apresurarte."},{icon:"\u{1F50D}",text:"Te explicamos con transparencia los servicios y c\xF3mo funciona la vida diaria."},{icon:"\u{1F91D}",text:"Te acompa\xF1amos durante todo el proceso de evaluaci\xF3n."},{icon:"\u{1F3E1}",text:"Te invitamos a conocer la sede personalmente antes de decidir."}].map(a=>`
+          ${[{icon:"\u{1F442}",text:"Te escuchamos con atenci\xF3n, sin presionarte ni apresurarte."},{icon:"\u{1F50D}",text:"Te explicamos con transparencia los servicios y c\xF3mo funciona la vida diaria."},{icon:"\u{1F91D}",text:"Te acompa\xF1amos durante todo el proceso de evaluaci\xF3n."},{icon:"\u{1F3E1}",text:"Te invitamos a conocer la sede personalmente antes de decidir."}].map(e=>`
             <div class="feature-item">
-              <div class="feature-item__icon" aria-hidden="true">${a.icon}</div>
-              <p class="feature-item__text">${a.text}</p>
+              <div class="feature-item__icon" aria-hidden="true">${e.icon}</div>
+              <p class="feature-item__text">${e.text}</p>
             </div>`).join("")}
         </div>
         <a 
-          href="${l("Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa conversar sobre las necesidades de mi familiar.")}"
+          href="${c("Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa conversar sobre las necesidades de mi familiar.")}"
           class="btn btn-primary"
           target="_blank"
           rel="noopener noreferrer"
@@ -178,7 +179,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </div>
     </div>
   </div>
-</section>`}function E(){let e=`
+</section>`}function E(){let a=`
     <div class="services__tabs" role="tablist" aria-label="Tipo de servicios">
       <button class="services__tab is-active" role="tab" aria-selected="true" aria-controls="panel-incluidos" id="tab-incluidos">
         \u2705 Incluidos regularmente
@@ -186,7 +187,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       <button class="services__tab" role="tab" aria-selected="false" aria-controls="panel-coordinados" id="tab-coordinados">
         \u{1F4CB} Seg\xFAn necesidad o coordinaci\xF3n
       </button>
-    </div>`,a=`
+    </div>`,e=`
     <div id="panel-incluidos" class="services__panel is-active" role="tabpanel" aria-labelledby="tab-incluidos">
       <div class="services__grid">
         ${s.serviciosIncluidos.map(t=>`
@@ -196,7 +197,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
             <p class="service-card__text">${t.descripcion}</p>
           </div>`).join("")}
       </div>
-    </div>`,n=`
+    </div>`,r=`
     <div id="panel-coordinados" class="services__panel" role="tabpanel" aria-labelledby="tab-coordinados" hidden>
       <div class="services__coord-grid">
         ${s.serviciosCoordinados.map(t=>`
@@ -220,11 +221,11 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
         Un equipo dedicado que acompa\xF1a a cada residente con respeto, calidez y atenci\xF3n a los detalles que hacen sentir un hogar de verdad.
       </p>
     </div>
-    ${e}
     ${a}
-    ${n}
+    ${e}
+    ${r}
   </div>
-</section>`}function I(){return`
+</section>`}function z(){return`
 <section class="section daily-life section--white" id="vida-diaria" aria-labelledby="daily-title">
   <div class="container">
     <div class="section-header section-header--center">
@@ -238,19 +239,19 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </p>
     </div>
     <div class="daily-life__grid">
-      ${s.vidaDiaria.map(e=>`
+      ${s.vidaDiaria.map(a=>`
         <div class="daily-card fade-in">
-          <span class="daily-card__icon" aria-hidden="true">${e.icono}</span>
-          <p class="daily-card__text">${e.texto}</p>
+          <span class="daily-card__icon" aria-hidden="true">${a.icono}</span>
+          <p class="daily-card__text">${a.texto}</p>
         </div>`).join("")}
     </div>
   </div>
-</section>`}function z(){return`
+</section>`}function I(){return`
 <section class="tagline" id="tagline" aria-labelledby="tagline-text">
   <div class="container">
-    <p class="tagline__text" id="tagline-text">${["Aqu\xED nadie pasa el d\xEDa solo.","Alguien conversa, alguien acompa\xF1a,","y de noche siempre hay alguien atento."].map(n=>`<span class="tagline__line">${n.split(" ").map(t=>`<span class="tagline__word">${t}</span>`).join(" ")}</span>`).join("")}</p>
+    <p class="tagline__text" id="tagline-text">${["Aqu\xED nadie pasa el d\xEDa solo.","Alguien conversa, alguien acompa\xF1a,","y de noche siempre hay alguien atento."].map(r=>`<span class="tagline__line">${r.split(" ").map(t=>`<span class="tagline__word">${t}</span>`).join(" ")}</span>`).join("")}</p>
   </div>
-</section>`}function T(){return`
+</section>`}function j(){return`
 <section class="section gallery section--beige" id="galeria" aria-labelledby="gallery-title">
   <div class="container">
     <div class="section-header section-header--center">
@@ -262,27 +263,56 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </p>
     </div>
     <div class="gallery__grid" role="list">
-      ${s.galeria.map((e,a)=>`
+      ${s.galeria.map((a,e)=>`
         <div class="gallery__item fade-in" role="listitem">
           <img 
-            src="${e.src}"
-            alt="${e.alt}"
-            loading="${a===0?"eager":"lazy"}"
+            src="${a.src}"
+            alt="${a.alt}"
+            loading="${e===0?"eager":"lazy"}"
             class="gallery__img"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
           >
           <div class="gallery__placeholder" style="display:none" aria-hidden="true">
             <span class="gallery__placeholder-icon">\u{1F3E1}</span>
-            <span>${e.caption}</span>
+            <span>${a.caption}</span>
           </div>
-          <div class="gallery__caption" aria-hidden="true">${e.caption}</div>
+          <div class="gallery__caption" aria-hidden="true">${a.caption}</div>
         </div>`).join("")}
     </div>
     <p style="text-align:center;margin-top:28px;font-size:0.85rem;color:var(--color-text-secondary);">
       \u{1F4F8} Las fotograf\xEDas corresponden a los espacios reales de la residencia.
     </p>
   </div>
-</section>`}function j(){return`
+</section>`}function T(){let a=s.visitas;return a?`
+<section class="visitas" id="visitas" aria-labelledby="visitas-title">
+  <div class="container">
+    <div class="visitas__grid">
+      <div class="visitas__aside fade-in">
+        <span class="visitas__badge" aria-hidden="true">${a.etiqueta}</span>
+        <p class="visitas__destacado" aria-hidden="true">${a.destacado}</p>
+        <ul class="visitas__puntos" role="list">
+          ${a.puntos.map(e=>`
+            <li class="visitas__punto">
+              <span class="visitas__punto-icono" aria-hidden="true">${e.icono}</span>
+              ${e.texto}
+            </li>`).join("")}
+        </ul>
+      </div>
+      <div class="visitas__texto fade-in">
+        <h2 id="visitas-title" class="visitas__title">${a.titulo}</h2>
+        <p class="visitas__desc">${a.descripcion}</p>
+        <p class="visitas__cierre">${a.cierre}</p>
+        <a
+          href="${c(a.whatsappMensaje)}"
+          class="btn btn-whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track="whatsapp_click"
+        >${o.whatsapp} ${a.ctaTexto}</a>
+      </div>
+    </div>
+  </div>
+</section>`:""}function R(){return`
 <section class="section locations section--ivory" id="sedes" aria-labelledby="locations-title">
   <div class="container">
     <div class="section-header section-header--center">
@@ -294,47 +324,47 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </p>
     </div>
     <div class="locations__grid">
-      ${s.sedes.map(e=>`
-        <article class="location-card fade-in" aria-label="Sede ${e.nombre}">
+      ${s.sedes.map(a=>`
+        <article class="location-card fade-in" aria-label="Sede ${a.nombre}">
           <div class="location-card__img-wrap">
             <img 
-              src="${e.imagen}"
-              alt="Fachada de ${e.nombre}"
+              src="${a.imagen}"
+              alt="Fachada de ${a.nombre}"
               class="location-card__img"
               loading="lazy"
-              onerror="this.parentElement.innerHTML='&lt;div class=&quot;img-placeholder&quot; style=&quot;height:220px&quot;&gt;\u{1F3E1}&lt;br&gt;${e.nombre}&lt;/div&gt;'"
+              onerror="this.parentElement.innerHTML='&lt;div class=&quot;img-placeholder&quot; style=&quot;height:220px&quot;&gt;\u{1F3E1}&lt;br&gt;${a.nombre}&lt;/div&gt;'"
             >
           </div>
           <div class="location-card__body">
-            <div class="location-card__badge">\u{1F4CD} ${e.id==="macul"?"Macul":"\xD1u\xF1oa"}</div>
-            <h3 class="location-card__name">${e.nombre}</h3>
-            <p class="location-card__address">${e.direccion}</p>
-            <p class="location-card__region">${e.region}</p>
+            <div class="location-card__badge">\u{1F4CD} ${a.id==="macul"?"Macul":"\xD1u\xF1oa"}</div>
+            <h3 class="location-card__name">${a.nombre}</h3>
+            <p class="location-card__address">${a.direccion}</p>
+            <p class="location-card__region">${a.region}</p>
             <div class="location-card__actions">
               <a 
-                href="${e.mapsUrl}"
+                href="${a.mapsUrl}"
                 class="btn btn-secondary btn-sm"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-track="directions_click"
-                aria-label="C\xF3mo llegar a ${e.nombre}"
+                aria-label="C\xF3mo llegar a ${a.nombre}"
               >${o.map} C\xF3mo llegar</a>
               <div class="location-card__actions-row">
                 <a 
-                  href="${l(e.whatsappMensaje)}"
+                  href="${c(a.whatsappMensaje)}"
                   class="btn btn-whatsapp btn-sm"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-track="whatsapp_click"
-                  aria-label="Consultar por ${e.nombre} por WhatsApp"
+                  aria-label="Consultar por ${a.nombre} por WhatsApp"
                 >${o.whatsapp} Consultar por esta sede</a>
                 <a 
-                  href="${l(`Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa *agendar una visita* a la ${e.nombre} (${e.direccion}). \xBFCu\xE1ndo ser\xEDa posible?`)}"
+                  href="${c(`Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Me gustar\xEDa *agendar una visita* a la ${a.nombre} (${a.direccion}). \xBFCu\xE1ndo ser\xEDa posible?`)}"
                   class="btn btn-primary btn-sm"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-track="schedule_visit_click"
-                  aria-label="Agendar visita a ${e.nombre}"
+                  aria-label="Agendar visita a ${a.nombre}"
                 >${o.calendar} Agendar visita</a>
               </div>
             </div>
@@ -342,7 +372,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
         </article>`).join("")}
     </div>
   </div>
-</section>`}function R(){return`
+</section>`}function N(){return`
 <section class="section process" id="proceso" aria-labelledby="process-title">
   <div class="container">
     <div class="section-header section-header--center">
@@ -354,16 +384,16 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </p>
     </div>
     <div class="process__grid">
-      ${s.pasos.map(e=>`
+      ${s.pasos.map(a=>`
         <div class="process-step fade-in">
-          <div class="process-step__num" aria-hidden="true">${e.numero}</div>
-          <h3 class="process-step__title">${e.titulo}</h3>
-          <p class="process-step__text">${e.descripcion}</p>
+          <div class="process-step__num" aria-hidden="true">${a.numero}</div>
+          <h3 class="process-step__title">${a.titulo}</h3>
+          <p class="process-step__text">${a.descripcion}</p>
         </div>`).join("")}
     </div>
     <div style="text-align:center;margin-top:48px;">
       <a 
-        href="${l(y)}"
+        href="${c(y)}"
         class="btn btn-outline-white btn-lg"
         target="_blank"
         rel="noopener noreferrer"
@@ -371,7 +401,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       >${o.calendar} Comenzar ahora</a>
     </div>
   </div>
-</section>`}function N(){return!s.testimonios||s.testimonios.length===0?"":`
+</section>`}function P(){return!s.testimonios||s.testimonios.length===0?"":`
 <section class="section testimonials" id="testimonios" aria-labelledby="testimonials-title">
   <div class="container">
     <div class="section-header section-header--center">
@@ -380,18 +410,18 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       <h2 id="testimonials-title" class="section-title">Experiencias reales</h2>
     </div>
     <div class="testimonials__grid">
-      ${s.testimonios.map(e=>`
+      ${s.testimonios.map(a=>`
         <div class="testimonial-card fade-in">
           <div class="testimonial-card__quote" aria-hidden="true">"</div>
-          <p class="testimonial-card__text">${e.texto}</p>
+          <p class="testimonial-card__text">${a.texto}</p>
           <div>
-            <p class="testimonial-card__author">${e.nombre}</p>
-            <p class="testimonial-card__role">${e.relacion}</p>
+            <p class="testimonial-card__author">${a.nombre}</p>
+            <p class="testimonial-card__role">${a.relacion}</p>
           </div>
         </div>`).join("")}
     </div>
   </div>
-</section>`}function F(){return`
+</section>`}function U(){return`
 <section class="section faq section--white" id="preguntas" aria-labelledby="faq-title">
   <div class="container">
     <div class="section-header section-header--center">
@@ -403,29 +433,29 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </p>
     </div>
     <div class="faq__list" role="list">
-      ${s.faq.map((e,a)=>`
+      ${s.faq.map((a,e)=>`
         <div class="faq-item" role="listitem">
           <button 
             class="faq-item__btn"
             aria-expanded="false"
-            aria-controls="faq-answer-${a}"
-            id="faq-btn-${a}"
+            aria-controls="faq-answer-${e}"
+            id="faq-btn-${e}"
           >
-            <span>${e.pregunta}</span>
+            <span>${a.pregunta}</span>
             <span class="faq-item__icon" aria-hidden="true">+</span>
           </button>
           <div 
-            id="faq-answer-${a}" 
+            id="faq-answer-${e}" 
             class="faq-item__answer"
             role="region"
-            aria-labelledby="faq-btn-${a}"
+            aria-labelledby="faq-btn-${e}"
           >
-            <p>${e.respuesta}</p>
+            <p>${a.respuesta}</p>
           </div>
         </div>`).join("")}
     </div>
   </div>
-</section>`}function U(){return`
+</section>`}function F(){return`
 <section class="section contact section--ivory" id="contacto" aria-labelledby="contact-title">
   <div class="container">
     <div class="contact__grid">
@@ -440,7 +470,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
         </p>
         <div class="contact__direct">
           <a 
-            href="${l(p)}"
+            href="${c(p)}"
             class="contact__direct-item"
             target="_blank"
             rel="noopener noreferrer"
@@ -563,7 +593,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </div>
     </div>
   </div>
-</section>`}function P(){return`
+</section>`}function H(){return`
 <section class="final-cta" id="cta-final" aria-labelledby="cta-title" style="position:relative;overflow:hidden">
   <div class="container">
     <div class="final-cta__content fade-in">
@@ -576,14 +606,14 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       </p>
       <div class="final-cta__actions">
         <a 
-          href="${l(y)}"
+          href="${c(y)}"
           class="btn btn-primary btn-lg"
           target="_blank"
           rel="noopener noreferrer"
           data-track="schedule_visit_click"
         >${o.calendar} Agendar una visita</a>
         <a 
-          href="${l(p)}"
+          href="${c(p)}"
           class="btn btn-whatsapp btn-lg"
           target="_blank"
           rel="noopener noreferrer"
@@ -593,7 +623,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
     </div>
   </div>
   <div class="final-cta__leaf" style="bottom:-60px;right:-40px" aria-hidden="true">\u{1F33F}</div>
-</section>`}function B(){let e=new Date().getFullYear(),a=[["#inicio","Inicio"],["#cuidados","Cuidados"],["#vida-diaria","Vida diaria"],["#sedes","Sedes"],["#preguntas","Preguntas"],["#contacto","Contacto"]];return`
+</section>`}function B(){let a=new Date().getFullYear(),e=[["#inicio","Inicio"],["#cuidados","Cuidados"],["#vida-diaria","Vida diaria"],["#sedes","Sedes"],["#preguntas","Preguntas"],["#contacto","Contacto"]];return`
 <footer class="footer" id="footer" role="contentinfo">
   <div class="container">
     <div class="footer__grid">
@@ -619,7 +649,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
             data-track="facebook_click"
           >${o.facebook}</a>
           <a
-            href="${l(p)}"
+            href="${c(p)}"
             class="footer__social-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -656,7 +686,7 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       <div>
         <p class="footer__col-title">Navegaci\xF3n</p>
         <ul class="footer__list">
-          ${a.map(([n,t])=>`<li><a href="${n}">${t}</a></li>`).join("")}
+          ${e.map(([r,t])=>`<li><a href="${r}">${t}</a></li>`).join("")}
         </ul>
       </div>
     </div>
@@ -669,29 +699,29 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
   <div class="container">
     <div class="footer__bottom">
       <p class="footer__copy">
-        \xA9 ${e} Casa de Reposo Claudia Lastra. Todos los derechos reservados.
+        \xA9 ${a} Casa de Reposo Claudia Lastra. Todos los derechos reservados.
       </p>
       <div class="footer__legal">
         <a href="privacidad.html">Pol\xEDtica de privacidad</a>
       </div>
     </div>
   </div>
-</footer>`}function H(){return`
+</footer>`}function W(){return`
 <div class="wa-float" aria-label="Contacto r\xE1pido por WhatsApp">
   <span class="wa-float__tooltip" aria-hidden="true">Consultar ahora</span>
   <a 
-    href="${l(p)}"
+    href="${c(p)}"
     class="wa-float__btn"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Consultar por WhatsApp"
     data-track="whatsapp_click"
   >${o.whatsapp}</a>
-</div>`}function W(){return`
+</div>`}function D(){return`
 <div class="mobile-bar" id="mobile-bar" role="navigation" aria-label="Acciones r\xE1pidas">
   <div class="mobile-bar__grid">
     <a 
-      href="${l(p)}"
+      href="${c(p)}"
       class="btn btn-whatsapp"
       target="_blank"
       rel="noopener noreferrer"
@@ -704,9 +734,9 @@ var CasaDeReposo=(()=>{var s={nombre:"Casa de Reposo Claudia Lastra",slogan:"Un 
       data-track="schedule_visit_click"
     >${o.calendar} Agendar visita</a>
   </div>
-</div>`}function D(){let e=document.getElementById("header");if(e){let i=document.createElement("div");i.setAttribute("aria-hidden","true"),i.style.cssText="position:absolute;top:16px;height:1px;width:1px;pointer-events:none",document.body.prepend(i),new IntersectionObserver(([r])=>e.classList.toggle("is-scrolled",!r.isIntersecting),{threshold:0}).observe(i)}let a=document.getElementById("hamburger"),n=document.getElementById("main-nav");a&&n&&(a.addEventListener("click",()=>{let i=n.classList.toggle("is-open");if(a.setAttribute("aria-expanded",i.toString()),a.setAttribute("aria-label",i?"Cerrar men\xFA":"Abrir men\xFA de navegaci\xF3n"),i){let r=n.querySelector(".nav__link");r&&r.focus()}}),n.querySelectorAll(".nav__link").forEach(i=>{i.addEventListener("click",()=>{n.classList.remove("is-open"),a.setAttribute("aria-expanded","false"),a.setAttribute("aria-label","Abrir men\xFA de navegaci\xF3n")})}),document.addEventListener("keydown",i=>{i.key==="Escape"&&n.classList.contains("is-open")&&(n.classList.remove("is-open"),a.setAttribute("aria-expanded","false"),a.focus())})),document.querySelectorAll(".faq-item__btn").forEach(i=>{i.addEventListener("click",()=>{let d=i.closest(".faq-item").classList.toggle("is-open");i.setAttribute("aria-expanded",d.toString());let c=document.getElementById(i.getAttribute("aria-controls"));c&&(c.style.display=d?"block":"none")})}),document.querySelectorAll(".services__tab").forEach(i=>{i.addEventListener("click",()=>{let r=i.getAttribute("aria-controls");document.querySelectorAll(".services__tab").forEach(c=>{c.classList.remove("is-active"),c.setAttribute("aria-selected","false")}),document.querySelectorAll(".services__panel").forEach(c=>{c.classList.remove("is-active"),c.hidden=!0}),i.classList.add("is-active"),i.setAttribute("aria-selected","true");let d=document.getElementById(r);d&&(d.classList.add("is-active"),d.hidden=!1)})});let t=document.getElementById("contact-form");t&&t.addEventListener("submit",O),V(),X(),G()}function O(e){e.preventDefault();let a=e.target,n=a.nombre.value.trim(),t=a.telefono.value.trim(),i=a.relacion.value,r=a.acepto.checked,d=!0,c=(u,C,x)=>{let f=document.getElementById(u),h=document.getElementById(C);x?(f.classList.add("has-error"),h.classList.add("is-visible"),d=!1):(f.classList.remove("has-error"),h.classList.remove("is-visible"))};c("nombre","error-nombre",!n),c("telefono","error-telefono",!t),c("relacion","error-relacion",!i);let m=document.getElementById("error-acepto"),$=document.getElementById("acepto");if(r?m.classList.remove("is-visible"):(m.classList.add("is-visible"),$.focus(),d=!1),!d){let u=a.querySelector(".has-error, input:invalid");u&&u.focus();return}let v=a.sede.value,b=a.plazo.value,w=a.nivel.value,g=a.mensaje.value.trim(),k=`Hola, vengo desde el sitio web de Casa de Reposo Claudia Lastra.
+</div>`}function O(){let a=document.getElementById("header");if(a){let i=document.createElement("div");i.setAttribute("aria-hidden","true"),i.style.cssText="position:absolute;top:16px;height:1px;width:1px;pointer-events:none",document.body.prepend(i),new IntersectionObserver(([n])=>a.classList.toggle("is-scrolled",!n.isIntersecting),{threshold:0}).observe(i)}let e=document.getElementById("hamburger"),r=document.getElementById("main-nav");e&&r&&(e.addEventListener("click",()=>{let i=r.classList.toggle("is-open");if(e.setAttribute("aria-expanded",i.toString()),e.setAttribute("aria-label",i?"Cerrar men\xFA":"Abrir men\xFA de navegaci\xF3n"),i){let n=r.querySelector(".nav__link");n&&n.focus()}}),r.querySelectorAll(".nav__link").forEach(i=>{i.addEventListener("click",()=>{r.classList.remove("is-open"),e.setAttribute("aria-expanded","false"),e.setAttribute("aria-label","Abrir men\xFA de navegaci\xF3n")})}),document.addEventListener("keydown",i=>{i.key==="Escape"&&r.classList.contains("is-open")&&(r.classList.remove("is-open"),e.setAttribute("aria-expanded","false"),e.focus())})),document.querySelectorAll(".faq-item__btn").forEach(i=>{i.addEventListener("click",()=>{let d=i.closest(".faq-item").classList.toggle("is-open");i.setAttribute("aria-expanded",d.toString());let l=document.getElementById(i.getAttribute("aria-controls"));l&&(l.style.display=d?"block":"none")})}),document.querySelectorAll(".services__tab").forEach(i=>{i.addEventListener("click",()=>{let n=i.getAttribute("aria-controls");document.querySelectorAll(".services__tab").forEach(l=>{l.classList.remove("is-active"),l.setAttribute("aria-selected","false")}),document.querySelectorAll(".services__panel").forEach(l=>{l.classList.remove("is-active"),l.hidden=!0}),i.classList.add("is-active"),i.setAttribute("aria-selected","true");let d=document.getElementById(n);d&&(d.classList.add("is-active"),d.hidden=!1)})});let t=document.getElementById("contact-form");t&&t.addEventListener("submit",V),X(),G(),Q()}function V(a){a.preventDefault();let e=a.target,r=e.nombre.value.trim(),t=e.telefono.value.trim(),i=e.relacion.value,n=e.acepto.checked,d=!0,l=(u,C,q)=>{let f=document.getElementById(u),h=document.getElementById(C);q?(f.classList.add("has-error"),h.classList.add("is-visible"),d=!1):(f.classList.remove("has-error"),h.classList.remove("is-visible"))};l("nombre","error-nombre",!r),l("telefono","error-telefono",!t),l("relacion","error-relacion",!i);let m=document.getElementById("error-acepto"),$=document.getElementById("acepto");if(n?m.classList.remove("is-visible"):(m.classList.add("is-visible"),$.focus(),d=!1),!d){let u=e.querySelector(".has-error, input:invalid");u&&u.focus();return}let v=e.sede.value,b=e.plazo.value,w=e.nivel.value,g=e.mensaje.value.trim(),k=`Hola, vengo desde el sitio web de Casa de Reposo Claudia Lastra.
 
-Mi nombre es *${n}*.
+Mi nombre es *${r}*.
 Soy *${i}* de la persona que necesita apoyo.
 Mi tel\xE9fono de contacto es: ${t}.
 Estoy consultando por la *${v}*.
@@ -714,4 +744,4 @@ El ingreso ser\xEDa *${b.toLowerCase()}*.
 Nivel general de apoyo: ${w}.${g?`
 Comentario: ${g}.`:""}
 
-Me gustar\xEDa recibir informaci\xF3n y coordinar una visita.`;_("visit_form_submit",{sede:v,plazo:b}),window.open(`https://wa.me/${s.whatsappNumero}?text=${encodeURIComponent(k)}`,"_blank","noopener")}function V(){let e=document.querySelectorAll(".fade-in"),a=()=>e.forEach(i=>i.classList.add("is-visible"));if(window.matchMedia("(prefers-reduced-motion: reduce)").matches||!("IntersectionObserver"in window)){a();return}let t=new IntersectionObserver(i=>{i.forEach(r=>{r.isIntersecting&&(r.target.classList.add("is-visible"),t.unobserve(r.target))})},{threshold:.1,rootMargin:"0px 0px -40px 0px"});e.forEach(i=>t.observe(i)),setTimeout(()=>{document.querySelector(".fade-in.is-visible")||a()},1500)}function X(){let e=document.querySelectorAll(".tagline__word");if(!e.length)return;let a=()=>e.forEach(i=>i.classList.add("is-lit"));if(window.matchMedia("(prefers-reduced-motion: reduce)").matches||!("IntersectionObserver"in window)){a();return}let t=new IntersectionObserver(i=>{i.forEach(r=>{r.isIntersecting&&(r.target.classList.add("is-lit"),t.unobserve(r.target))})},{threshold:.5,rootMargin:"0px 0px -25% 0px"});e.forEach(i=>t.observe(i)),setTimeout(()=>{document.querySelector(".tagline__word.is-lit")||a()},3e3)}function G(){document.querySelectorAll("[data-track]").forEach(e=>{e.addEventListener("click",()=>{_(e.dataset.track,{element:e.tagName,text:e.textContent?.trim()?.slice(0,40)})})})}document.addEventListener("DOMContentLoaded",()=>{q(),D()});})();
+Me gustar\xEDa recibir informaci\xF3n y coordinar una visita.`;_("visit_form_submit",{sede:v,plazo:b}),window.open(`https://wa.me/${s.whatsappNumero}?text=${encodeURIComponent(k)}`,"_blank","noopener")}function X(){let a=document.querySelectorAll(".fade-in"),e=()=>a.forEach(i=>i.classList.add("is-visible"));if(window.matchMedia("(prefers-reduced-motion: reduce)").matches||!("IntersectionObserver"in window)){e();return}let t=new IntersectionObserver(i=>{i.forEach(n=>{n.isIntersecting&&(n.target.classList.add("is-visible"),t.unobserve(n.target))})},{threshold:.1,rootMargin:"0px 0px -40px 0px"});a.forEach(i=>t.observe(i)),setTimeout(()=>{document.querySelector(".fade-in.is-visible")||e()},1500)}function G(){let a=document.querySelectorAll(".tagline__word");if(!a.length)return;let e=()=>a.forEach(i=>i.classList.add("is-lit"));if(window.matchMedia("(prefers-reduced-motion: reduce)").matches||!("IntersectionObserver"in window)){e();return}let t=new IntersectionObserver(i=>{i.forEach(n=>{n.isIntersecting&&(n.target.classList.add("is-lit"),t.unobserve(n.target))})},{threshold:.5,rootMargin:"0px 0px -25% 0px"});a.forEach(i=>t.observe(i)),setTimeout(()=>{document.querySelector(".tagline__word.is-lit")||e()},3e3)}function Q(){document.querySelectorAll("[data-track]").forEach(a=>{a.addEventListener("click",()=>{_(a.dataset.track,{element:a.tagName,text:a.textContent?.trim()?.slice(0,40)})})})}document.addEventListener("DOMContentLoaded",()=>{x(),O()});})();

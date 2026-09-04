@@ -7,10 +7,9 @@ Thumbs.db
 .env
 .env.local
 .env.production
-.vercel
 
-# Sourcemaps generados por el build (no subir al repo)
-bundle.js.map
+# Estado local de wrangler
+.wrangler/
 
 # Configuración local del editor/agente
 .claude/

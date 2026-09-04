@@ -596,6 +596,98 @@
 .gallery__placeholder-icon { font-size: 2rem; opacity: 0.6; }
 
 /* ═══════════════════════════════════════════════════════════
+   VISITAS 24/7
+   ═══════════════════════════════════════════════════════════ */
+.visitas {
+  background: var(--color-green-forest);
+  padding: var(--section-pad) 0;
+}
+.visitas__grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Columna izquierda: el dato duro */
+.visitas__aside {
+  border: 1px solid rgba(169, 197, 173, 0.3);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+}
+.visitas__badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-green-pastel);
+  margin-bottom: 12px;
+}
+.visitas__destacado {
+  font-family: var(--font-serif);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+.visitas__puntos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.visitas__punto {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.4;
+}
+.visitas__punto-icono {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(169, 197, 173, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+/* Columna derecha: el argumento */
+.visitas__title {
+  color: var(--color-white);
+  font-size: clamp(24px, 3.2vw, 36px);
+  max-width: 620px;
+  margin-bottom: 20px;
+}
+.visitas__desc {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin-bottom: 20px;
+}
+.visitas__cierre {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.95rem;
+  max-width: 620px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 900px) {
+  .visitas__grid { grid-template-columns: 1fr; gap: 32px; }
+  .visitas__aside { max-width: 420px; }
+  .visitas__destacado { font-size: 48px; }
+}
+@media (max-width: 600px) {
+  .visitas__aside { padding: 24px; }
+  .visitas .btn { width: 100%; }
+}
+
+/* ═══════════════════════════════════════════════════════════
    SEDES
    ═══════════════════════════════════════════════════════════ */
 .locations {

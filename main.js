@@ -67,6 +67,7 @@ function buildPage() {
       ${buildDailyLife()}
       ${buildTagline()}
       ${buildGallery()}
+      ${buildVisitas()}
       ${buildLocations()}
       ${buildProcess()}
       ${buildTestimonials()}
@@ -418,6 +419,42 @@ function buildGallery() {
     <p style="text-align:center;margin-top:28px;font-size:0.85rem;color:var(--color-text-secondary);">
       📸 Las fotografías corresponden a los espacios reales de la residencia.
     </p>
+  </div>
+</section>`;
+}
+
+// ─── VISITAS 24/7 ─────────────────────────────────────────────
+function buildVisitas() {
+  const v = SITE.visitas;
+  if (!v) return '';
+  return `
+<section class="visitas" id="visitas" aria-labelledby="visitas-title">
+  <div class="container">
+    <div class="visitas__grid">
+      <div class="visitas__aside fade-in">
+        <span class="visitas__badge" aria-hidden="true">${v.etiqueta}</span>
+        <p class="visitas__destacado" aria-hidden="true">${v.destacado}</p>
+        <ul class="visitas__puntos" role="list">
+          ${v.puntos.map(p => `
+            <li class="visitas__punto">
+              <span class="visitas__punto-icono" aria-hidden="true">${p.icono}</span>
+              ${p.texto}
+            </li>`).join('')}
+        </ul>
+      </div>
+      <div class="visitas__texto fade-in">
+        <h2 id="visitas-title" class="visitas__title">${v.titulo}</h2>
+        <p class="visitas__desc">${v.descripcion}</p>
+        <p class="visitas__cierre">${v.cierre}</p>
+        <a
+          href="${waLink(v.whatsappMensaje)}"
+          class="btn btn-whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track="whatsapp_click"
+        >${ICONS.whatsapp} ${v.ctaTexto}</a>
+      </div>
+    </div>
   </div>
 </section>`;
 }

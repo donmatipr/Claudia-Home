@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "npx serve . --listen 3000 --no-clipboard",
-    "build": "npx esbuild main.js --bundle --outfile=bundle.js --format=iife --global-name=CasaDeReposo --minify --sourcemap=external",
+    "build": "npx esbuild main.js --bundle --outfile=bundle.js --format=iife --global-name=CasaDeReposo --minify",
     "build:dev": "npx esbuild main.js --bundle --outfile=bundle.js --format=iife --global-name=CasaDeReposo --sourcemap=inline",
     "build:site": "npm run build && node scripts/build-dist.mjs",
     "deploy": "npm run build:site && npx wrangler@4.129.0 deploy",

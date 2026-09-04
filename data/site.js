@@ -115,8 +115,28 @@ export const SITE = {
     { icono: '🤸', texto: 'Movimiento y actividad física adaptada' },
     { icono: '🎭', texto: 'Actividades grupales y estimulación' },
     { icono: '😴', texto: 'Descanso tranquilo y acompañado' },
-    { icono: '👨‍👩‍👧', texto: 'Visitas familiares bienvenidas' },
+    { icono: '👨‍👩‍👧', texto: 'Visitas de la familia a cualquier hora, sin horarios restringidos' },
   ],
+
+  // ─── Visitas de familiares ───────────────────────────────
+  // Edita este bloque para cambiar la sección destacada de visitas.
+  visitas: {
+    etiqueta: 'Puertas abiertas',
+    destacado: '24/7',
+    titulo: 'Puedes visitar a tu familiar a cualquier hora, todos los días del año',
+    descripcion:
+      'No trabajamos con horarios de visita restringidos. Puedes venir en la mañana, por la tarde, de noche o el fin de semana, sin pedir permiso ni ajustarte a una franja horaria.',
+    cierre:
+      'Lo hacemos por una razón simple: la presencia de la familia forma parte del cuidado. Una residencia que limita las visitas suele tener algo que ordenar antes de recibirte. Aquí puedes llegar sin aviso y ver exactamente cómo vive tu familiar cualquier día del año.',
+    puntos: [
+      { icono: '🌅', texto: 'Mañana, tarde o noche' },
+      { icono: '📅', texto: 'Todos los días, incluidos festivos' },
+      { icono: '🔓', texto: 'Sin aviso previo ni autorización' },
+    ],
+    ctaTexto: 'Consultar por una visita',
+    whatsappMensaje:
+      'Hola, me comunico desde el sitio web de Casa de Reposo Claudia Lastra. Quisiera consultar sobre las *visitas a los residentes*. ¿Podrían orientarme?',
+  },
 
   // ─── Proceso de consulta ─────────────────────────────────
   pasos: [
@@ -158,6 +178,11 @@ export const SITE = {
       pregunta: '¿Cómo puedo agendar una visita?',
       respuesta:
         'Puedes agendar una visita escribiéndonos por WhatsApp al +56 9 9901 0921 o completando el formulario de contacto en esta página. Te responderemos a la brevedad para coordinar el día y la hora que mejor te acomode.',
+    },
+    {
+      pregunta: '¿Hay horarios de visita para las familias?',
+      respuesta:
+        'No. Puedes visitar a tu familiar a cualquier hora, todos los días del año, incluidos festivos. No necesitas avisar con anticipación ni pedir autorización. Creemos que la presencia de la familia es parte del cuidado, no una interrupción, y que poder llegar sin aviso es la mejor garantía de transparencia que podemos ofrecerte.',
     },
     {
       pregunta: '¿En qué comunas están ubicados?',
