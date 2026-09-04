@@ -6,12 +6,13 @@
 
 import { SITE } from './data/site.js';
 
-// El logo se incrusta en el DOM, no se carga con <img>. Un SVG dentro de
-// <img> se renderiza aislado y no alcanza las fuentes web de la página:
-// su texto saldría en Georgia y Arial en vez de Lora y Karla.
-// Para cambiar el logo, reemplaza estos archivos y corre `npm run build`.
-import LOGO_COLOR from './images/logo-v2/logo-horizontal.svg';
-import LOGO_MONO from './images/logo-v2/logo-monocromo.svg';
+// El logo se incrusta en el DOM en vez de cargarse con <img>, para poder
+// pintarlo con currentColor en el footer.
+// Se usan las versiones en trazos: los archivos originales traen el nombre
+// como <text> con Lora y Karla, y dependerían de que esas fuentes carguen.
+// Para regenerarlas tras cambiar el logo: python scripts/logo-a-trazos.py
+import LOGO_COLOR from './images/logo-v2/logo-horizontal-trazos.svg';
+import LOGO_MONO from './images/logo-v2/logo-monocromo-trazos.svg';
 
 // ─── Analítica ────────────────────────────────────────────────
 function trackEvent(name, params = {}) {

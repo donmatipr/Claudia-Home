@@ -91,8 +91,9 @@
 .header__logo:hover, .header__logo:focus { text-decoration: none; }
 
 /* ── Logo ──
-   El SVG va incrustado en el DOM, no con <img>: así hereda las fuentes
-   web de la página. Su texto usa Lora y Karla, que se cargan aparte. */
+   El SVG va incrustado en el DOM y no con <img>, para poder pintarlo con
+   currentColor en el footer. Su texto está en trazos, así que no depende
+   de ninguna fuente. */
 .header__logo,
 .footer__logo {
   display: flex;
